@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+    <link href="./res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./res/html5shiv.min.js"></script>
+    <script src="./res/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="height:100%">
+    <div class="container-fluid" style="background:white;height:100%;">
+        <div class="row" style="height:100%;">
+            <!--左侧导航start-->
+            <div id="navbar" class="col-md-3"
+                style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+                <div style="height:50px;font-size:30px;line-height:50px;">
+                    <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none"
+                        href="index.html">
+                        <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+                        <span style="position: relative;top:-3px;">AceUI API<span
+                                style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+                    </a>
+                    </span>
+                </div>
+                <!--导航-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="searchapi" placeholder="search here"
+                        onkeyup="search('api',this)">
+                </div>
+                <div class="list">
+                    <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_d2ddea18f00665ce8623e36bd4e3c7c5">
+                            <a href="#info_api_d2ddea18f00665ce8623e36bd4e3c7c5"
+                                id="menu_d2ddea18f00665ce8623e36bd4e3c7c5">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                提升权限运行文件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="d2ddea18f00665ce8623e36bd4e3c7c5">提升权限运行文件<|-|>21<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:8:"filePath";i:1;s:10:"parameters";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:12:"程序路径";i:1;s:12:"运行参数";}}
+                                            <|-|>RunAsProcessByFilePath<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_32bb90e8976aab5298d5da10fe66f21d">
+                            <a href="#info_api_32bb90e8976aab5298d5da10fe66f21d"
+                                id="menu_32bb90e8976aab5298d5da10fe66f21d">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                替换除升级程序外文件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="32bb90e8976aab5298d5da10fe66f21d">替换除升级程序外文件<|-|>20<|-|>
+                                    <|-|>自定义界面，将此过程放到线程内执行<|-|>N;<|-|>ReplaceOtherFiles<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e2c420d928d4bf8ce0ff2ec19b371514">
+                            <a href="#info_api_e2c420d928d4bf8ce0ff2ec19b371514"
+                                id="menu_e2c420d928d4bf8ce0ff2ec19b371514">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                将解压目录的文件替换到程序当前目录 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="e2c420d928d4bf8ce0ff2ec19b371514">将解压目录的文件替换到程序当前目录<|-|>19<|-|>
+                                    <|-|>主要用于升级程序自身升级<|-|>N;<|-|>ReplaceUzipDirFileToCurrentDir<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7cbbc409ec990f19c78c75bd1e06f215">
+                            <a href="#info_api_7cbbc409ec990f19c78c75bd1e06f215"
+                                id="menu_7cbbc409ec990f19c78c75bd1e06f215">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                升级文件替换旧文件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="7cbbc409ec990f19c78c75bd1e06f215">升级文件替换旧文件<|-|>16<|-|>
+                                    <|-|>返回结果根据 升级事件回调 判断<|-|>N;<|-|>ReplaceFiles<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_14bfa6bb14875e45bba028a21ed38046">
+                            <a href="#info_api_14bfa6bb14875e45bba028a21ed38046"
+                                id="menu_14bfa6bb14875e45bba028a21ed38046">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                解压已下载的更新文件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="14bfa6bb14875e45bba028a21ed38046">解压已下载的更新文件<|-|>15<|-|>
+                                    <|-|>返回结果根据 升级事件回调 判断<|-|>N;<|-|>UnzipNeedUpdateFiles<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a3f390d88e4c41f2747bfa2f1b5f87db">
+                            <a href="#info_api_a3f390d88e4c41f2747bfa2f1b5f87db"
+                                id="menu_a3f390d88e4c41f2747bfa2f1b5f87db">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                下载需要更新的文件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="a3f390d88e4c41f2747bfa2f1b5f87db">下载需要更新的文件<|-|>14<|-|>
+                                    <|-|>返回结果根据 升级事件回调 判断<|-|>N;<|-|>DownloadNeedUpdateFiles<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_735b90b4568125ed6c3f678819b6e058">
+                            <a href="#info_api_735b90b4568125ed6c3f678819b6e058"
+                                id="menu_735b90b4568125ed6c3f678819b6e058">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                下载升级文件列表 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="735b90b4568125ed6c3f678819b6e058">下载升级文件列表<|-|>13<|-|>
+                                    <|-|>返回结果根据 升级事件回调 判断<|-|>N;<|-|>DownloadUpdateFileListIni<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3295c76acbf4caaed33c36b1b5fc2cb1">
+                            <a href="#info_api_3295c76acbf4caaed33c36b1b5fc2cb1"
+                                id="menu_3295c76acbf4caaed33c36b1b5fc2cb1">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                请求升级信息 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="3295c76acbf4caaed33c36b1b5fc2cb1">请求升级信息<|-|>12<|-|>
+                                    <|-|>返回结果根据 升级事件回调 判断<|-|>N;<|-|>RequestUpdateInfo<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_fc490ca45c00b1249bbe3554a4fdf6fb">
+                            <a href="#info_api_fc490ca45c00b1249bbe3554a4fdf6fb"
+                                id="menu_fc490ca45c00b1249bbe3554a4fdf6fb">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                是否强制升级 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="fc490ca45c00b1249bbe3554a4fdf6fb">是否强制升级<|-|>11<|-|>
+                                    <|-|>需要在获取升级信息后，回调
+                                        Function UpdateEventChangeCallback
+                                        Pop $varCurrentStep
+                                        ${If} $varCurrentStep == &#039;5&#039;
+                                        DetailPrint &#039;需要更新&#039;
+                                        此时才能获取
+                                        ${Endif}<|-|>N;<|-|>IsForced<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ea5d2f1c4608232e07d3aa3d998e5135">
+                            <a href="#info_api_ea5d2f1c4608232e07d3aa3d998e5135"
+                                id="menu_ea5d2f1c4608232e07d3aa3d998e5135">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                是否手动升级 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="ea5d2f1c4608232e07d3aa3d998e5135">是否手动升级<|-|>10<|-|>
+                                    <|-|>需要在获取升级信息后，回调
+                                        Function UpdateEventChangeCallback
+                                        Pop $varCurrentStep
+                                        ${If} $varCurrentStep == &#039;5&#039;
+                                        DetailPrint &#039;需要更新&#039;
+                                        此时才能获取
+                                        ${Endif}<|-|>N;<|-|>IsManual<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_03afdbd66e7929b125f8597834fa83a4">
+                            <a href="#info_api_03afdbd66e7929b125f8597834fa83a4"
+                                id="menu_03afdbd66e7929b125f8597834fa83a4">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                是否后台升级 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="03afdbd66e7929b125f8597834fa83a4">是否后台升级<|-|>9<|-|>
+                                    <|-|>需要在获取升级信息后，回调
+                                        Function UpdateEventChangeCallback
+                                        Pop $varCurrentStep
+                                        ${If} $varCurrentStep == &#039;5&#039;
+                                        DetailPrint &#039;需要更新&#039;
+                                        此时才能获取
+                                        ${Endif}<|-|>N;<|-|>IsBackstage<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_44f683a84163b3523afe57c2e008bc8c">
+                            <a href="#info_api_44f683a84163b3523afe57c2e008bc8c"
+                                id="menu_44f683a84163b3523afe57c2e008bc8c">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取升级信息 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="44f683a84163b3523afe57c2e008bc8c">获取升级信息<|-|>8<|-|>
+                                    <|-|>需要在获取升级信息后，回调
+                                        Function UpdateEventChangeCallback
+                                        Pop $varCurrentStep
+                                        ${If} $varCurrentStep == &#039;5&#039;
+                                        DetailPrint &#039;需要更新&#039;
+                                        此时才能获取
+                                        ${Endif}<|-|>N;<|-|>UpdateInfo<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7f39f8317fbdb1988ef4c628eba02591">
+                            <a href="#info_api_7f39f8317fbdb1988ef4c628eba02591"
+                                id="menu_7f39f8317fbdb1988ef4c628eba02591">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取当前升级版本 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="7f39f8317fbdb1988ef4c628eba02591">获取当前升级版本<|-|>7<|-|>
+                                    <|-|>需要在获取升级信息后，回调
+                                        Function UpdateEventChangeCallback
+                                        Pop $varCurrentStep
+                                        ${If} $varCurrentStep == &#039;5&#039;
+                                        DetailPrint &#039;需要更新&#039;
+                                        此时才能获取
+                                        ${Endif}<|-|>N;<|-|>CurrentVersion<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_072b030ba126b2f4b2374f342be9ed44">
+                            <a href="#info_api_072b030ba126b2f4b2374f342be9ed44"
+                                id="menu_072b030ba126b2f4b2374f342be9ed44">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                进度回调 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="072b030ba126b2f4b2374f342be9ed44">进度回调<|-|>6<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:22:"ProgressChangeCallback";}s:7:"default";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:18:"进度回调地址";}}
+                                            <|-|>SetProgressChangeCallback<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_093f65e080a295f8076b1c5722a46aa2">
+                            <a href="#info_api_093f65e080a295f8076b1c5722a46aa2"
+                                id="menu_093f65e080a295f8076b1c5722a46aa2">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                升级事件回调 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="093f65e080a295f8076b1c5722a46aa2">升级事件回调<|-|>5<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:25:"UpdateEventChangeCallback";}s:7:"default";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"函数地址";}}
+                                            <|-|>SetUpdateEventChangeCallback<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_66f041e16a60928b05a7e228a89c3799">
+                            <a href="#info_api_66f041e16a60928b05a7e228a89c3799"
+                                id="menu_66f041e16a60928b05a7e228a89c3799">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                设置本地程序版本 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="66f041e16a60928b05a7e228a89c3799">设置本地程序版本<|-|>4<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:12:"localVersion";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"本地版本";}}
+                                            <|-|>SetLocalVersion<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_72b32a1f754ba1c09b3695e0cb6cde7f">
+                            <a href="#info_api_72b32a1f754ba1c09b3695e0cb6cde7f"
+                                id="menu_72b32a1f754ba1c09b3695e0cb6cde7f">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                初始化日志 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="72b32a1f754ba1c09b3695e0cb6cde7f">初始化日志<|-|>3<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:6:"IsSelf";}s:7:"default";a:1:{i:0;s:4:"bool";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:27:"是否是临时升级程序";}}
+                                            <|-|>InitLog<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9f61408e3afb633e50cdf1b20de6f466">
+                            <a href="#info_api_9f61408e3afb633e50cdf1b20de6f466"
+                                id="menu_9f61408e3afb633e50cdf1b20de6f466">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                服务器设置 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="9f61408e3afb633e50cdf1b20de6f466">服务器设置<|-|>2<|-|>
+                                    设置服务端信息，这个函数必须在nsAutoUpdate所有接口之前设置<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:3:{i:0;s:5:"AppId";i:1;s:6:"AppKey";i:2;s:6:"AppUrl";}s:7:"default";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:3:"des";a:3:{i:0;s:35:"当前升级在服务器对应的Id";i:1;s:15:"通信加密Key";i:2;s:21:"升级服务器地址";}}
+                                            <|-|>SetAppServerSettings<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_b53b3a3d6ab90ce0268229151c9bde11">
+                            <a href="#info_api_b53b3a3d6ab90ce0268229151c9bde11"
+                                id="menu_b53b3a3d6ab90ce0268229151c9bde11">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                设置客户端信息 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="b53b3a3d6ab90ce0268229151c9bde11">设置客户端信息<|-|>1<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:7:"AppName";i:1;s:6:"AppDir";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:21:"升级程序文件名";i:1;s:24:"升级程序运行目录";}}
+                                            <|-|>SetAppSettings<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+                </div>
+                <form action="?act=api&tag=6&op=add" method="post">
+                </form>
+                <!--jquery模糊查询start-->
+                <script>
+                    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+                    function search(type, obj) {
+                        var $find = $.trim($(obj).val());//得到搜索内容
+                        if (type == 'cate') {//对接口分类进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#info_" + menu_id).show();
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                            }
+                        } else if (type == 'api') {//对接口进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();//左侧导航菜单隐藏
+                                $(".info_api").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#api_" + menu_id).show();//左侧导航菜单 部份 隐藏
+                                    $("#info_api_" + menu_id).show();//接口详情 部份 隐藏
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+                            }
+                        }
+                    }
+
+                    window.onload = function () {
+                        //添加关闭,打开左侧菜单的功能
+                        var status_flg = "&lt"; var cursor = "w-resize"
+                        var navbarButton = '<div onclick="navbar(this)" ' +
+                            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:' + cursor + ';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+                            status_flg +
+                            '</div>'
+                        //$('body').append(navbarButton);
+                    }
+                    // 全屏和normal
+                    function navbar(obj) {
+                        if ($('#mainwindow').hasClass('col-md-9')) {
+                            $(obj).html('&gt;');
+                            $(obj).css("cursor", "e-resize");
+                            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+                            $('#navbar').hide();
+                            $.cookie($COOKIE_KEY, '1');
+                        } else {
+                            $(obj).html('&lt;');
+                            $(obj).css("cursor", "w-resize");
+                            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+                            $('#navbar').show();
+                            $.cookie($COOKIE_KEY, '0');
+                        }
+                    }
+                </script>
+                <!--jquery模糊查询end-->
+                <!--end-->
+            </div>
+            <!--左侧导航end-->
+            <div id="mainwindow" class="col-md-9"
+                style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+                <!--顶部导航start-->
+                <div class="textshadow"
+                    style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                    <span> <a class="home" href="index.html">主页</a> - nsAutoUpdate</span>
+                </div>
+                <!--顶部导航end-->
+                <!--主窗口start-->
+                <div style="padding:16px;">
+                    <!--接口详情列表与接口管理start-->
+                    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_d2ddea18f00665ce8623e36bd4e3c7c5">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 18:01:06&nbsp;
+                            </div>
+                            <h4 class="textshadow">提升权限运行文件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">21</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>RunAsProcessByFilePath</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>filePath</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>程序路径</td>
+                                    </tr>
+                                    <tr>
+                                        <td>parameters</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>运行参数</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::RunAsProcessByFilePath &quot;$EXEPATH&quot; &quot;$varCurrentParameters&quot;
+Pop $R0
+${If} $R0 == 0
+        Call UpdateError
+${EndIf}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_32bb90e8976aab5298d5da10fe66f21d">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:57:15&nbsp;
+                            </div>
+                            <h4 class="textshadow">替换除升级程序外文件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">20</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>ReplaceOtherFiles</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>GetFunctionAddress $0 ReplaceOtherFiles
+BgWorker::CallAndWait
+Function ReplaceOtherFiles
+   nsAutoUpdate::ReplaceOtherFiles
+FunctionEnd</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">自定义界面，将此过程放到线程内执行</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_e2c420d928d4bf8ce0ff2ec19b371514">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:55:42&nbsp;
+                            </div>
+                            <h4 class="textshadow">将解压目录的文件替换到程序当前目录</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">19</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>ReplaceUzipDirFileToCurrentDir</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>!define UPDATE_TEMP_NAME &quot;AutoUpdateSelf.exe&quot;
+!define UPDATE_NAME &quot;AutoUpdate.exe&quot;
+nsAutoUpdate::ReplaceUzipDirFileToCurrentDir &quot;${UPDATE_NAME}&quot; &quot;${UPDATE_TEMP_NAME}&quot;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">主要用于升级程序自身升级</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_7cbbc409ec990f19c78c75bd1e06f215">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:54:08&nbsp;
+                            </div>
+                            <h4 class="textshadow">升级文件替换旧文件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">16</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>ReplaceFiles</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::ReplaceFiles</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回结果根据  升级事件回调 判断</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_14bfa6bb14875e45bba028a21ed38046">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:53:14&nbsp;
+                            </div>
+                            <h4 class="textshadow">解压已下载的更新文件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">15</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>UnzipNeedUpdateFiles</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::UnzipNeedUpdateFiles</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回结果根据  升级事件回调 判断</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_a3f390d88e4c41f2747bfa2f1b5f87db">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:52:37&nbsp;
+                            </div>
+                            <h4 class="textshadow">下载需要更新的文件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">14</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>DownloadNeedUpdateFiles</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::DownloadNeedUpdateFiles</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回结果根据  升级事件回调 判断</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_735b90b4568125ed6c3f678819b6e058">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:51:56&nbsp;
+                            </div>
+                            <h4 class="textshadow">下载升级文件列表</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">13</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>DownloadUpdateFileListIni</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::DownloadUpdateFileListIni</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回结果根据  升级事件回调 判断</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_3295c76acbf4caaed33c36b1b5fc2cb1">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:50:31&nbsp;
+                            </div>
+                            <h4 class="textshadow">请求升级信息</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">12</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>RequestUpdateInfo</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::RequestUpdateInfo</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回结果根据  升级事件回调 判断</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_fc490ca45c00b1249bbe3554a4fdf6fb">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:49:08&nbsp;
+                            </div>
+                            <h4 class="textshadow">是否强制升级</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">11</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>IsForced</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::IsForced
+Pop $IsForced
+DetailPrint &#039;是否强制:$R0&#039;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">需要在获取升级信息后，回调
+Function UpdateEventChangeCallback
+    Pop $varCurrentStep
+${If} $varCurrentStep == &#039;5&#039;
+    DetailPrint &#039;需要更新&#039;
+此时才能获取
+${Endif}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_ea5d2f1c4608232e07d3aa3d998e5135">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:48:30&nbsp;
+                            </div>
+                            <h4 class="textshadow">是否手动升级</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">10</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>IsManual</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::IsManual
+Pop $IsManual
+DetailPrint &#039;是否手动:$R0&#039;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">需要在获取升级信息后，回调
+Function UpdateEventChangeCallback
+    Pop $varCurrentStep
+${If} $varCurrentStep == &#039;5&#039;
+    DetailPrint &#039;需要更新&#039;
+此时才能获取
+${Endif}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_03afdbd66e7929b125f8597834fa83a4">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:47:45&nbsp;
+                            </div>
+                            <h4 class="textshadow">是否后台升级</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">9</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>IsBackstage</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::IsBackstage
+Pop $IsBackstage
+DetailPrint &#039;是否后台:$R0&#039;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">需要在获取升级信息后，回调
+Function UpdateEventChangeCallback
+    Pop $varCurrentStep
+${If} $varCurrentStep == &#039;5&#039;
+    DetailPrint &#039;需要更新&#039;
+此时才能获取
+${Endif}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_44f683a84163b3523afe57c2e008bc8c">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:46:45&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取升级信息</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">8</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>UpdateInfo</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::UpdateInfo
+Pop $R0
+ DetailPrint &#039;升级信息:$R0&#039;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">需要在获取升级信息后，回调
+Function UpdateEventChangeCallback
+    Pop $varCurrentStep
+${If} $varCurrentStep == &#039;5&#039;
+    DetailPrint &#039;需要更新&#039;
+此时才能获取
+${Endif}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_7f39f8317fbdb1988ef4c628eba02591">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:45:46&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取当前升级版本</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">7</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>CurrentVersion</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::CurrentVersion
+Pop $varCurrentVersion
+DetailPrint &#039;可升版本:$varCurrentVersion&#039;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">需要在获取升级信息后，回调
+Function UpdateEventChangeCallback
+    Pop $varCurrentStep
+${If} $varCurrentStep == &#039;5&#039;
+    DetailPrint &#039;需要更新&#039;
+此时才能获取
+${Endif}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_072b030ba126b2f4b2374f342be9ed44">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:43:12&nbsp;
+                            </div>
+                            <h4 class="textshadow">进度回调</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">6</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>SetProgressChangeCallback</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ProgressChangeCallback</td>
+                                        <td>int</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>进度回调地址</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>GetFunctionAddress $0 ProgressChangeCallback 
+nsAutoUpdate::SetProgressChangeCallback $0
+Function ProgressChangeCallback
+    Pop $R1
+    Pop $R2
+    Pop $R3
+    nsSkinEngine::NSISSetControlData &quot;progressText&quot;  &quot;$R1%&quot;  &quot;text&quot;
+    nsSkinEngine::NSISSetControlData &quot;InstallProgressBar&quot;  &quot;$R1&quot;  &quot;ProgressInt&quot;
+    nsSkinEngine::NSISSetControlData &quot;InstallProgressBar&quot;  &quot;$R1&quot; &quot;TaskBarProgress&quot;
+    nsSkinEngine::NSISSetControlData &quot;progressTip&quot;  &quot;正在下载：$R2&quot;  &quot;text&quot;
+    DetailPrint &#039;进度：$R1  下载文件名：$R2  是否完成：$R3&#039;
+FunctionEnd</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_093f65e080a295f8076b1c5722a46aa2">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:41:43&nbsp;
+                            </div>
+                            <h4 class="textshadow">升级事件回调</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">5</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>SetUpdateEventChangeCallback</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>UpdateEventChangeCallback</td>
+                                        <td>int</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>函数地址</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>GetFunctionAddress $0 UpdateEventChangeCallback 
+nsAutoUpdate::SetUpdateEventChangeCallback $0
+
+Function UpdateEventChangeCallback
+    Pop $varCurrentStep
+    ${If} $varCurrentStep == &#039;0&#039;
+    DetailPrint &#039;检查更新&#039;
+    ${ElseIf} $varCurrentStep == &#039;1&#039;
+    DetailPrint &#039;检查更新成功&#039;
+    ${ElseIf} $varCurrentStep == &#039;2&#039;
+    DetailPrint &#039;初始化log成功&#039;
+
+    ${ElseIf} $varCurrentStep == &#039;3&#039;
+    DetailPrint &#039;升级有效&#039;
+    ${ElseIf} $varCurrentStep == &#039;4&#039;
+    DetailPrint &#039;升级无效&#039;
+    ${ElseIf} $varCurrentStep == &#039;5&#039;
+    DetailPrint &#039;需要更新&#039;
+        Call OnNextBtnFunc
+        nsAutoUpdate::CurrentVersion
+        Pop $varCurrentVersion
+        DetailPrint &#039;可升版本:$varCurrentVersion&#039;
+        nsSkinEngine::NSISSetControlData &quot;newVersionTextStep2&quot;  &quot;可升版本：$varCurrentVersion&quot;  &quot;text&quot;
+        nsAutoUpdate::UpdateInfo
+        Pop $R0
+        DetailPrint &#039;升级信息:$R0&#039;
+        nsSkinEngine::NSISSetControlData &quot;updateInfo&quot;  $R0  &quot;text&quot;
+        nsAutoUpdate::IsBackstage
+        Pop $IsBackstage
+        DetailPrint &#039;是否后台:$R0&#039;
+        nsAutoUpdate::IsManual
+        Pop $IsManual
+        DetailPrint &#039;是否手动:$R0&#039;
+        nsAutoUpdate::IsForced
+        Pop $IsForced
+        DetailPrint &#039;是否强制:$R0&#039;
+        ${If} $IsAuto == 1
+            ${If} $IsBanDisturb == 1
+            ${AndIf} $IsForced != 1
+            ${OrIf} $IsManual == 1
+                Call OnInstallCancelFunc
+            ${ElseIf} $IsBackstage == 1
+                nsAutoUpdate::DownloadUpdateFileListIni
+            ${ElseIf} $IsBackstage == 0
+                nsSkinEngine::NSISShowLowerRight
+            ${EndIf}
+        ${EndIf}
+    ${ElseIf} $varCurrentStep == &#039;6&#039;
+     Call NoNeedUpdate
+    DetailPrint &#039;不需要更新&#039;
+    ${ElseIf} $varCurrentStep == &#039;7&#039;
+    DetailPrint &#039;下载filelist.ini&#039;
+    ${ElseIf} $varCurrentStep == &#039;8&#039;
+    DetailPrint &#039;下载filelist.ini成功&#039;
+    nsAutoUpdate::DownloadNeedUpdateFiles
+    ${ElseIf} $varCurrentStep == &#039;9&#039;
+    DetailPrint &#039;比对文件&#039;
+    ${ElseIf} $varCurrentStep == &#039;10&#039;
+    DetailPrint &#039;比对文件成功&#039;
+    ${ElseIf} $varCurrentStep == &#039;11&#039;
+    DetailPrint &#039;下载文件&#039;
+    ${ElseIf} $varCurrentStep == &#039;12&#039;
+    DetailPrint &#039;下载文件成功&#039;
+    nsAutoUpdate::UnzipNeedUpdateFiles
+    ${ElseIf} $varCurrentStep == &#039;13&#039;
+    DetailPrint &#039;解压文件&#039;
+    ${ElseIf} $varCurrentStep == &#039;14&#039;
+    DetailPrint &#039;解压文件成功&#039;
+    nsUtils::NSISIsProcessRunningByFilePath &quot;$EXEDIR${MAIN_APP_NAME}&quot;
+    Pop $R1
+        ${If} $R1 == 1
+        ${AndIf} $IsBackstage == 0
+        nsSkinEngine::NSISSetTabLayoutCurrentIndex &quot;WizardTab&quot; &quot;3&quot;
+        ${ElseIf} $R1 == 1
+        ${AndIf} $IsBackstage == 1
+        ${AndIf} $IsAuto == 1
+        Call WriteUpdateMark
+        nsSkinEngine::NSISExitSkinEngine &quot;false&quot;
+        ${Else}
+        nsAutoUpdate::ReplaceFiles
+        ${Endif}
+    ${ElseIf} $varCurrentStep == &#039;15&#039;
+    DetailPrint &#039;替换文件&#039;
+    Call removeUpdateMark
+    nsSkinEngine::NSISSetTabLayoutCurrentIndex &quot;WizardTab&quot; &quot;4&quot;
+    ${ElseIf} $varCurrentStep == &#039;16&#039;
+    DetailPrint &#039;替换文件成功&#039;
+    ${ElseIf} $varCurrentStep == &#039;17&#039;
+    DetailPrint &#039;替换自身&#039;
+    nsAutoUpdate::ReplaceUzipDirFileToCurrentDir &quot;${UPDATE_NAME}&quot; &quot;${UPDATE_TEMP_NAME}&quot;
+    Pop $R1
+        ${If} $R1 == 1
+        DetailPrint &#039;运行${UPDATE_TEMP_NAME}&#039;
+        nsSkinEngine::NSISHideSkinEngine
+        Exec &#039;&quot;$EXEDIR${UPDATE_TEMP_NAME}&quot; /UpdateSelf /UpdateOther $varCurrentParameters&#039;
+        nsSkinEngine::NSISExitSkinEngine &quot;false&quot;
+        ${Else}
+            Call UpdateError
+        ${EndIf}
+    ${ElseIf} $varCurrentStep == &#039;18&#039;
+    DetailPrint &#039;升级成功&#039;
+        ${If} $IsAuto == 1
+        ${AndIf} $IsBackstage == 1
+        nsSkinEngine::NSISExitSkinEngine &quot;false&quot;
+        ${Else}
+        Call getLocalVersion
+        nsSkinEngine::NSISSetControlData &quot;currentVersionTextStep4&quot;  &quot;当前版本：$varLocalVersion&quot;  &quot;text&quot;
+        nsSkinEngine::NSISSetControlData &quot;OkBtn&quot;  &quot;立即运行&quot;  &quot;text&quot;
+        nsSkinEngine::NSISSetTabLayoutCurrentIndex &quot;WizardTab&quot; &quot;5&quot;
+        ${EndIf}
+    ${ElseIf} $varCurrentStep &gt; &#039;18&#039; ;EVENT_SOME_ERROR
+    DetailPrint &quot;出错了 代号：$varCurrentStep&quot;
+        ${If} $varCurrentStep == &#039;21&#039;
+        DetailPrint &quot;需要提升权限&quot;
+        nsAutoUpdate::RunAsProcessByFilePath &quot;$EXEPATH&quot; &quot;$varCurrentParameters&quot;
+        nsSkinEngine::NSISExitSkinEngine &quot;false&quot;
+        ${ElseIf} $varCurrentStep == &#039;19&#039;
+         Call NetError
+        ${Else}
+         Call UpdateError
+        ${EndIf}
+    ${EndIf}
+FunctionEnd</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_66f041e16a60928b05a7e228a89c3799">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:40:12&nbsp;
+                            </div>
+                            <h4 class="textshadow">设置本地程序版本</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">4</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>SetLocalVersion</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>localVersion</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>本地版本</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::SetLocalVersion &quot;2017.01.20.000&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_72b32a1f754ba1c09b3695e0cb6cde7f">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:39:06&nbsp;
+                            </div>
+                            <h4 class="textshadow">初始化日志</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">3</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>InitLog</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>IsSelf</td>
+                                        <td>bool</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>是否是临时升级程序</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>${If} $IsUpdateSelf == 0
+    nsAutoUpdate::InitLog &quot;false&quot;
+    ${Else}
+    nsAutoUpdate::InitLog &quot;true&quot;
+    ${EndIf}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_9f61408e3afb633e50cdf1b20de6f466">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:37:36&nbsp;
+                            </div>
+                            <h4 class="textshadow">服务器设置</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">2</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>SetAppServerSettings</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            设置服务端信息，这个函数必须在nsAutoUpdate所有接口之前设置 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AppId</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>当前升级在服务器对应的Id</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AppKey</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>通信加密Key</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AppUrl</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>升级服务器地址</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsAutoUpdate::SetAppServerSettings &quot;1&quot; &quot;65B70DE7540C42759156483165E35215&quot; &quot;http://update.aceui.cn&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_b53b3a3d6ab90ce0268229151c9bde11">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-20 17:37:49&nbsp;
+                            </div>
+                            <h4 class="textshadow">设置客户端信息</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">1</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>SetAppSettings</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AppName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>升级程序文件名</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AppDir</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>升级程序运行目录</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>!define UPDATE_NAME &quot;AutoUpdate.exe&quot;
+nsAutoUpdate::SetAppSettings &quot;${UPDATE_NAME}&quot; &quot;$EXEDIR&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <!--接口详情列表与接口管理end-->
+                </div>
+                <!--主窗口end-->
+            </div>
+        </div>
+    </div>
+    <script src="./res/jquery.min.js"></script>
+    <script src="./res/jquery.cookie.js"></script>
+    <script src="./res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

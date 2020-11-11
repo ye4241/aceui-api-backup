@@ -1,0 +1,2458 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+    <link href="./res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./res/html5shiv.min.js"></script>
+    <script src="./res/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="height:100%">
+    <div class="container-fluid" style="background:white;height:100%;">
+        <div class="row" style="height:100%;">
+            <!--左侧导航start-->
+            <div id="navbar" class="col-md-3"
+                style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+                <div style="height:50px;font-size:30px;line-height:50px;">
+                    <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none"
+                        href="index.html">
+                        <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+                        <span style="position: relative;top:-3px;">AceUI API<span
+                                style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+                    </a>
+                    </span>
+                </div>
+                <!--导航-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="searchapi" placeholder="search here"
+                        onkeyup="search('api',this)">
+                </div>
+                <div class="list">
+                    <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_a684eceee76fc522773286a895bc8436">
+                            <a href="#info_api_a684eceee76fc522773286a895bc8436"
+                                id="menu_a684eceee76fc522773286a895bc8436">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                安装进度完成事件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="a684eceee76fc522773286a895bc8436">安装进度完成事件<|-|>0000002<|-|>安装进度完成事件
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:16:"bindCallbackName";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:15:"绑定回调名";}}
+                                            <|-|>NSISCompleteAutoDo<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d82c8d1619ad8176d665453cfb2e55f0">
+                            <a href="#info_api_d82c8d1619ad8176d665453cfb2e55f0"
+                                id="menu_d82c8d1619ad8176d665453cfb2e55f0">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                进度完成是否自动跳转 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="d82c8d1619ad8176d665453cfb2e55f0">进度完成是否自动跳转<|-|>0000001<|-|>
+                                    安装/卸载进度完成是否自动跳转 (默认为true)<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:16:"completeAutoJump";}s:7:"default";a:1:{i:0;s:4:"bool";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:18:"是否自动跳转";}}
+                                            <|-|>NSISCompleteAutoJump<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9a1158154dfa42caddbd0694a4e9bdc8">
+                            <a href="#info_api_9a1158154dfa42caddbd0694a4e9bdc8"
+                                id="menu_9a1158154dfa42caddbd0694a4e9bdc8">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                前一页面 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="9a1158154dfa42caddbd0694a4e9bdc8">前一页面<|-|>0014<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:11:"controlName";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:40:"TabLayout
+                                            或者 AnimationTabLayout name";}}<|-|>NSISBackTab<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_2838023a778dfaecdc212708f721b788">
+                            <a href="#info_api_2838023a778dfaecdc212708f721b788"
+                                id="menu_2838023a778dfaecdc212708f721b788">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                下一页面 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="2838023a778dfaecdc212708f721b788">下一页面<|-|>0013<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:11:"controlName";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:40:"TabLayout
+                                            或者 AnimationTabLayout name";}}<|-|>NSISNextTab<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c0c7c76d30bd3dcaefc96f40275bdc0a">
+                            <a href="#info_api_c0c7c76d30bd3dcaefc96f40275bdc0a"
+                                id="menu_c0c7c76d30bd3dcaefc96f40275bdc0a">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                开始卸载 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="c0c7c76d30bd3dcaefc96f40275bdc0a">开始卸载<|-|>0012<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:11:"autoChanged";}s:7:"default";a:1:{i:0;s:4:"bool";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:30:"是否自动切换下一页面";}}
+                                            <|-|>NSISStartUnInstall<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f457c545a9ded88f18ecee47145a72c0">
+                            <a href="#info_api_f457c545a9ded88f18ecee47145a72c0"
+                                id="menu_f457c545a9ded88f18ecee47145a72c0">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                开始安装 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="f457c545a9ded88f18ecee47145a72c0">开始安装<|-|>0011<|-|>开始安装<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:11:"autoChanged";}s:7:"default";a:1:{i:0;s:4:"bool";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:30:"是否自动切换下一页面";}}
+                                            <|-|>NSISStartInstall<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_642e92efb79421734881b53e1e1b18b6">
+                            <a href="#info_api_642e92efb79421734881b53e1e1b18b6"
+                                id="menu_642e92efb79421734881b53e1e1b18b6">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                窗体还原 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="642e92efb79421734881b53e1e1b18b6">窗体还原<|-|>0010<|-|>
+                                    <|-|>
+                                        <|-|>N;<|-|>NSISNormalSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_67c6a1e7ce56d3d6fa748ab6d9af3fd7">
+                            <a href="#info_api_67c6a1e7ce56d3d6fa748ab6d9af3fd7"
+                                id="menu_67c6a1e7ce56d3d6fa748ab6d9af3fd7">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                窗体最大化 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="67c6a1e7ce56d3d6fa748ab6d9af3fd7">窗体最大化<|-|>0009<|-|>窗体最大化<|-|>
+                                        <|-|>N;<|-|>NSISMaxSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d9d4f495e875a2e075a1a4a6e1b9770f">
+                            <a href="#info_api_d9d4f495e875a2e075a1a4a6e1b9770f"
+                                id="menu_d9d4f495e875a2e075a1a4a6e1b9770f">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                窗体最小化 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="d9d4f495e875a2e075a1a4a6e1b9770f">窗体最小化<|-|>0008<|-|>窗体最小化<|-|>
+                                        <|-|>N;<|-|>NSISMinSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6c8349cc7260ae62e3b1396831a8398f">
+                            <a href="#info_api_6c8349cc7260ae62e3b1396831a8398f"
+                                id="menu_6c8349cc7260ae62e3b1396831a8398f">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                绑定获取安装卸载细节 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="6c8349cc7260ae62e3b1396831a8398f">绑定获取安装卸载细节<|-|>0010<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:21:"显示细节控件名";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:0:"";}}
+                                            <|-|>NSISBindingDetail<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f7177163c833dff4b38fc8d2872f1ec6">
+                            <a href="#info_api_f7177163c833dff4b38fc8d2872f1ec6"
+                                id="menu_f7177163c833dff4b38fc8d2872f1ec6">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                绑定安装进度 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="f7177163c833dff4b38fc8d2872f1ec6">绑定安装进度<|-|>0009<|-|>绑定安装进度<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:18:"进度条控件名";i:1;s:25:"进度%比显示控件名";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:18:"进度条控件名";i:1;s:9:"e.g.
+                                            100%";}}<|-|>NSISBindingProgress<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_02e74f10e0327ad868d138f2b4fdd6f0">
+                            <a href="#info_api_02e74f10e0327ad868d138f2b4fdd6f0"
+                                id="menu_02e74f10e0327ad868d138f2b4fdd6f0">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                设置程序DPI 类型 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="02e74f10e0327ad868d138f2b4fdd6f0">设置程序DPI 类型<|-|>023<|-|>设置程序DPI 类型
+                                    <|-|>暂时功能关闭<|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:7:"dpiType";}s:7:"default";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:10:"DPI
+                                            类型";}}<|-|>SetAwareness<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_4e732ced3463d06de0ca9a15b6153677">
+                            <a href="#info_api_4e732ced3463d06de0ca9a15b6153677"
+                                id="menu_4e732ced3463d06de0ca9a15b6153677">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                设置窗体宽高 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="4e732ced3463d06de0ca9a15b6153677">设置窗体宽高<|-|>022<|-|>设置窗体宽高<|-|>在XML
+                                        布局文件中，不能设置 maxinfo= mininfo
+                                        如果不想鼠标拖拽修改窗体大小可以设置
+                                        sizebox=&quot;0,0,0,0&quot;<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:5:"width";i:1;s:6:"height";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:3:"宽";i:1;s:3:"高";}}
+                                            <|-|>NSISResize<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8e296a067a37563370ded05f5a3bf3ec">
+                            <a href="#info_api_8e296a067a37563370ded05f5a3bf3ec"
+                                id="menu_8e296a067a37563370ded05f5a3bf3ec">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                设置当前页 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="8e296a067a37563370ded05f5a3bf3ec">设置当前页<|-|>021<|-|>设置当前页<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:7:"tabName";i:1;s:12:"currentIndex";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:14:"TabLayout
+                                            Name";i:1;s:6:"页码";}}<|-|>NSISSetTabLayoutCurrentIndex<|-|>void<|-|>
+                                                        void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_1ff1de774005f8da13f42943881c655f">
+                            <a href="#info_api_1ff1de774005f8da13f42943881c655f"
+                                id="menu_1ff1de774005f8da13f42943881c655f">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                显示MessageBox </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="1ff1de774005f8da13f42943881c655f">显示MessageBox<|-|>020<|-|>
+                                    显示MessageBox<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:10:"tittleText";i:1;s:8:"infoText";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:12:"标题内容";i:1;s:6:"信息";}}
+                                            <|-|>NSISMessageBox<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_37693cfc748049e45d87b8c7d8b9aacd">
+                            <a href="#info_api_37693cfc748049e45d87b8c7d8b9aacd"
+                                id="menu_37693cfc748049e45d87b8c7d8b9aacd">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                初始化MessageBox </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="37693cfc748049e45d87b8c7d8b9aacd">初始化MessageBox<|-|>018<|-|>
+                                    初始化MessageBox<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:6:{i:0;s:7:"xmlName";i:1;s:17:"tittleControlName";i:2;s:15:"textControlName";i:3;s:19:"closeBtnControlName";i:4;s:16:"okBtnControlName";i:5;s:20:"cancelBtnControlName";}s:7:"default";a:6:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";}s:3:"des";a:6:{i:0;s:24:"布局文件XML的名字";i:1;s:18:"标题控件名字";i:2;s:24:"提示内容控件名字";i:3;s:24:"关闭按钮控件名字";i:4;s:24:"确定按钮控件名字";i:5;s:24:"取消按钮控件名字";}}
+                                            <|-|>NSISInitMessageBox<|-|>int<|-|>int</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_b6d767d2f8ed5d21a44b0e5886680cb9">
+                            <a href="#info_api_b6d767d2f8ed5d21a44b0e5886680cb9"
+                                id="menu_b6d767d2f8ed5d21a44b0e5886680cb9">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                退出安装 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="b6d767d2f8ed5d21a44b0e5886680cb9">退出安装<|-|>017<|-|>窗体退出（退出安装）<|-|>
+                                        nsSkinEngine::NSISExitSkinEngine “true”
+                                        需要与
+                                        NSISInitAnimationBkControl
+                                        NSISStartAnimationBkControl
+                                        NSISStopAnimationBkControl
+                                        需成对使用<|-|>N;<|-|>NSISExitSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3c59dc048e8850243be8079a5c74d079">
+                            <a href="#info_api_3c59dc048e8850243be8079a5c74d079"
+                                id="menu_3c59dc048e8850243be8079a5c74d079">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                隐藏界面 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="3c59dc048e8850243be8079a5c74d079">隐藏界面<|-|>016<|-|>隐藏界面<|-|>
+                                        <|-|>N;<|-|>NSISHideSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_98f13708210194c475687be6106a3b84">
+                            <a href="#info_api_98f13708210194c475687be6106a3b84"
+                                id="menu_98f13708210194c475687be6106a3b84">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                显示界面 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="98f13708210194c475687be6106a3b84">显示界面<|-|>0015<|-|>显示界面<|-|>
+                                        <|-|>N;<|-|>NSISShowSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_1f0e3dad99908345f7439f8ffabdffc4">
+                            <a href="#info_api_1f0e3dad99908345f7439f8ffabdffc4"
+                                id="menu_1f0e3dad99908345f7439f8ffabdffc4">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                运行界面 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="1f0e3dad99908345f7439f8ffabdffc4">运行界面<|-|>014<|-|>运行界面<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:6:"isShow";}s:7:"default";a:1:{i:0;s:4:"bool";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"是否显示";}}
+                                            <|-|>NSISRunSkinEngine<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6f4922f45568161a8cdf4ad2299f6d23">
+                            <a href="#info_api_6f4922f45568161a8cdf4ad2299f6d23"
+                                id="menu_6f4922f45568161a8cdf4ad2299f6d23">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                文件夹选择窗 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="6f4922f45568161a8cdf4ad2299f6d23">文件夹选择窗<|-|>013<|-|>文件夹选择窗<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:6:"tittle";i:1;s:9:"defaltDir";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:40:"标题（例如：
+                                            请选择文件夹）";i:1;s:21:"初始化打开位置";}}<|-|>NSISSelectFolderDialog<|-|>void<|-|>
+                                                        void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_70efdf2ec9b086079795c442636b55fb">
+                            <a href="#info_api_70efdf2ec9b086079795c442636b55fb"
+                                id="menu_70efdf2ec9b086079795c442636b55fb">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                发送消息 ｛3.0之后已废弃，移到辅助插件｝ </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="70efdf2ec9b086079795c442636b55fb">发送消息 ｛3.0之后已废弃，移到辅助插件｝<|-|>012<|-|>
+                                    发送消息<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:4:{i:0;s:4:"hwnd";i:1;s:9:"messageId";i:2;s:6:"WPARAM";i:3;s:6:"LPARAM";}s:7:"default";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:3:"des";a:4:{i:0;s:10:"消息HWND";i:1;s:8:"消息ID";i:2;s:6:"WPARAM";i:3;s:6:"LPARAM";}}
+                                            <|-|>NSISSendMessage<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c74d97b01eae257e44aa9d5bade97baf">
+                            <a href="#info_api_c74d97b01eae257e44aa9d5bade97baf"
+                                id="menu_c74d97b01eae257e44aa9d5bade97baf">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                杀死定时器 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="c74d97b01eae257e44aa9d5bade97baf">杀死定时器<|-|>011<|-|>杀死定时器<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:6:"timeId";}s:7:"default";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:35:"TimerID(一般是回调函数的ID)";}}
+                                            <|-|>NSISKillTimer<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9bf31c7ff062936a96d3c8bd1f8f2ff3">
+                            <a href="#info_api_9bf31c7ff062936a96d3c8bd1f8f2ff3"
+                                id="menu_9bf31c7ff062936a96d3c8bd1f8f2ff3">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                创建定时器 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="9bf31c7ff062936a96d3c8bd1f8f2ff3">创建定时器<|-|>010<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:7:"timerId";i:1;s:8:"interval";}s:7:"default";a:2:{i:0;s:3:"int";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:35:"TimerID(一般是回调函数的ID)";i:1;s:6:"间隔";}}
+                                            <|-|>NSISCreatTimer<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_aab3238922bcc25a6f606eb525ffdc56">
+                            <a href="#info_api_aab3238922bcc25a6f606eb525ffdc56"
+                                id="menu_aab3238922bcc25a6f606eb525ffdc56">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取控件数据 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="aab3238922bcc25a6f606eb525ffdc56">获取控件数据<|-|>009<|-|>获取控件数据<|-|>根据查询
+                                        dataType 返回对应类型 string int bool<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:11:"controlName";i:1;s:8:"dataType";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:16:"control的名字";i:1;s:60:"数据的类型
+                                            e.g. 1. text; 2. bkimage; 3. link; 4. enable";}}<|-|>NSISGetControlData<|-|>
+                                                    string<|-|>string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c51ce410c124a10e0db5e4b97fc2af39">
+                            <a href="#info_api_c51ce410c124a10e0db5e4b97fc2af39"
+                                id="menu_c51ce410c124a10e0db5e4b97fc2af39">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                为控件设置数据 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="c51ce410c124a10e0db5e4b97fc2af39">为控件设置数据<|-|>008<|-|>为控件设置数据<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:3:{i:0;s:11:"controlName";i:1;s:4:"data";i:2;s:8:"dataType";}s:7:"default";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:3:"des";a:3:{i:0;s:16:"control的名字";i:1;s:22:"赋给control的数据";i:2;s:66:"数据的类型
+                                            (e.g.： 1. text; 2. bkimage; 3. link; 4. enable )";}}<|-|>NSISSetControlData
+                                                <|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c20ad4d76fe97759aa27a0c99bff6710">
+                            <a href="#info_api_c20ad4d76fe97759aa27a0c99bff6710"
+                                id="menu_c20ad4d76fe97759aa27a0c99bff6710">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                为控件绑定对应的事件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="c20ad4d76fe97759aa27a0c99bff6710">为控件绑定对应的事件<|-|>007<|-|>
+                                    为控件绑定对应的事件，有事件消息时执行对应代码<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:11:"controlName";i:1;s:5:"pFunc";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:9:"控件名";i:1;s:24:"回调事件函数地址";}}
+                                            <|-|>NSISOnControlBindNSISScript<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6512bd43d9caa6e02c990b0a82652dca">
+                            <a href="#info_api_6512bd43d9caa6e02c990b0a82652dca"
+                                id="menu_6512bd43d9caa6e02c990b0a82652dca">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                显示许可证文件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="6512bd43d9caa6e02c990b0a82652dca">显示许可证文件<|-|>006<|-|>显示许可证文件<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:19:"richeditControlName";i:1;s:11:"licenseText";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:25:"richedit
+                                            control的名字";i:1;s:24:"许可协议文件名字";}}<|-|>NSISShowLicense<|-|>void<|-|>
+                                                        void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d3d9446802a44259755d38e6d163e820">
+                            <a href="#info_api_d3d9446802a44259755d38e6d163e820"
+                                id="menu_d3d9446802a44259755d38e6d163e820">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                判断特定的control是否存在 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="d3d9446802a44259755d38e6d163e820">判断特定的control是否存在<|-|>005<|-|>
+                                    判断特定的control是否存在<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:11:"controlName";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"控件名称";}}
+                                            <|-|>NSISFindControl<|-|>bool<|-|>bool</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_45c48cce2e2d7fbdea1afc51c7c6ad26">
+                            <a href="#info_api_45c48cce2e2d7fbdea1afc51c7c6ad26"
+                                id="menu_45c48cce2e2d7fbdea1afc51c7c6ad26">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                停止动画背景控件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="45c48cce2e2d7fbdea1afc51c7c6ad26">停止动画背景控件<|-|>003<|-|>停止动画背景控件<|-|>
+                                        NSISInitAnimationBkControl
+                                        NSISStartAnimationBkControl
+                                        NSISStopAnimationBkControl
+                                        需成对使用<|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:11:"controlName";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"控件名称";}}
+                                            <|-|>NSISStopAnimationBkControl<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c9f0f895fb98ab9159f51fd0297e236d">
+                            <a href="#info_api_c9f0f895fb98ab9159f51fd0297e236d"
+                                id="menu_c9f0f895fb98ab9159f51fd0297e236d">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                背景控件开始动画 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="c9f0f895fb98ab9159f51fd0297e236d">背景控件开始动画<|-|>002<|-|>背景控件开始动画<|-|>
+                                        NSISInitAnimationBkControl
+                                        NSISStartAnimationBkControl
+                                        NSISStopAnimationBkControl
+                                        需成对使用<|-|>
+                                            a:4:{s:4:"name";a:3:{i:0;s:11:"controlName";i:1;s:13:"currentFrames";i:2;s:11:"framesSpeed";}s:7:"default";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:3:"des";a:3:{i:0;s:12:"控件名称";i:1;s:18:"动画当前帧号";i:2;s:21:"帧频率（ms/帧）";}}
+                                            <|-|>NSISStartAnimationBkControl<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8f14e45fceea167a5a36dedd4bea2543">
+                            <a href="#info_api_8f14e45fceea167a5a36dedd4bea2543"
+                                id="menu_8f14e45fceea167a5a36dedd4bea2543">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                初始化动画背景控件 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="8f14e45fceea167a5a36dedd4bea2543">初始化动画背景控件<|-|>001<|-|>初始化动画背景控件<|-|>
+                                        在 主窗体初始化 函数尾部 初始化
+                                        NSISInitAnimationBkControl
+                                        NSISStartAnimationBkControl
+                                        NSISStopAnimationBkControl
+                                        需成对使用<|-|>
+                                            a:4:{s:4:"name";a:9:{i:0;s:20:"animationControlName";i:1;s:16:"animationSkinDir";i:2;s:14:"animationCount";i:3;s:19:"animationJumpFrames";i:4;s:15:"animationIsLoop";i:5;s:10:"ispositive";i:6;s:14:"callBackFrames";i:7;s:21:"pFuncPositiveCallback";i:8;s:34:"pFuncpFuncPositiveCallbackCallback";}s:7:"default";a:9:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";i:7;s:6:"string";i:8;s:6:"string";}s:4:"type";a:9:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";}s:3:"des";a:9:{i:0;s:18:"动画控件名称";i:1;s:18:"动画皮肤路径";i:2;s:15:"动画总帧数";i:3;s:75:"动画跳转帧号｛如开启循环，将会在此到最大帧数循环｝";i:4;s:27:"动画跳转帧是否循环";i:5;s:13:"正序/倒序";i:6;s:12:"回调帧数";i:7;s:33:"正序回调帧触发函数地址";i:8;s:33:"倒序回调帧触发函数地址";}}
+                                            <|-|>NSISInitAnimationBkControl<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_1679091c5a880faf6fb5e6087eb1b2dc">
+                            <a href="#info_api_1679091c5a880faf6fb5e6087eb1b2dc"
+                                id="menu_1679091c5a880faf6fb5e6087eb1b2dc">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                主窗体初始化 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="1679091c5a880faf6fb5e6087eb1b2dc">主窗体初始化<|-|>000<|-|>主窗体初始化函数<|-|>在
+                                        onInit 后被执行<|-|>
+                                            a:4:{s:4:"name";a:8:{i:0;s:7:"skinDir";i:1;s:11:"skinXmlName";i:2;s:10:"appTabName";i:3;s:21:"isTabSupportAnimation";i:4;s:7:"appName";i:5;s:3:"key";i:6;s:11:"appIconName";i:7;s:5:"isTop";}s:7:"default";a:8:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";i:7;s:6:"string";}s:4:"type";a:8:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";}s:3:"des";a:8:{i:0;s:13:"skin的路径";i:1;s:22:"skin布局XML文件名";i:2;s:24:"安装页面tab的名字";i:3;s:33:"安装页面tab是否支持动画";i:4;s:15:"安装包名称";i:5;s:76:"注册码｛获取邀请码并自行到http://www.aceui.cn/license/生成｝";i:6;s:13:"程序ICON名";i:7;s:18:"程序是否置顶";}}
+                                            <|-|>NSISInitSkinEngine<|-|>int<|-|>int</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+                </div>
+                <form action="?act=api&tag=3&op=add" method="post">
+                </form>
+                <!--jquery模糊查询start-->
+                <script>
+                    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+                    function search(type, obj) {
+                        var $find = $.trim($(obj).val());//得到搜索内容
+                        if (type == 'cate') {//对接口分类进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#info_" + menu_id).show();
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                            }
+                        } else if (type == 'api') {//对接口进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();//左侧导航菜单隐藏
+                                $(".info_api").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#api_" + menu_id).show();//左侧导航菜单 部份 隐藏
+                                    $("#info_api_" + menu_id).show();//接口详情 部份 隐藏
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+                            }
+                        }
+                    }
+
+                    window.onload = function () {
+                        //添加关闭,打开左侧菜单的功能
+                        var status_flg = "&lt"; var cursor = "w-resize"
+                        var navbarButton = '<div onclick="navbar(this)" ' +
+                            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:' + cursor + ';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+                            status_flg +
+                            '</div>'
+                        //$('body').append(navbarButton);
+                    }
+                    // 全屏和normal
+                    function navbar(obj) {
+                        if ($('#mainwindow').hasClass('col-md-9')) {
+                            $(obj).html('&gt;');
+                            $(obj).css("cursor", "e-resize");
+                            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+                            $('#navbar').hide();
+                            $.cookie($COOKIE_KEY, '1');
+                        } else {
+                            $(obj).html('&lt;');
+                            $(obj).css("cursor", "w-resize");
+                            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+                            $('#navbar').show();
+                            $.cookie($COOKIE_KEY, '0');
+                        }
+                    }
+                </script>
+                <!--jquery模糊查询end-->
+                <!--end-->
+            </div>
+            <!--左侧导航end-->
+            <div id="mainwindow" class="col-md-9"
+                style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+                <!--顶部导航start-->
+                <div class="textshadow"
+                    style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                    <span> <a class="home" href="index.html">主页</a> - nsSkinEngine</span>
+                </div>
+                <!--顶部导航end-->
+                <!--主窗口start-->
+                <div style="padding:16px;">
+                    <!--接口详情列表与接口管理start-->
+                    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_a684eceee76fc522773286a895bc8436">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-14 19:55:58&nbsp;
+                            </div>
+                            <h4 class="textshadow">安装进度完成事件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0000002</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISCompleteAutoDo</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            安装进度完成事件 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bindCallbackName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>绑定回调名</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>;处理完成事件
+   GetFunctionAddress $0 OnCompleteDo
+    nsSkinEngine::NSISOnControlBindNSISScript &quot;OnCompleteDo&quot; $0
+    nsSkinEngine::NSISCompleteAutoDo &quot;OnCompleteDo&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_d82c8d1619ad8176d665453cfb2e55f0">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-13 20:05:02&nbsp;
+                            </div>
+                            <h4 class="textshadow">进度完成是否自动跳转</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0000001</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISCompleteAutoJump</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            安装/卸载进度完成是否自动跳转 (默认为true) </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>completeAutoJump</td>
+                                        <td>bool</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>是否自动跳转</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISCompleteAutoJump &quot;false&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_9a1158154dfa42caddbd0694a4e9bdc8">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-14 16:51:29&nbsp;
+                            </div>
+                            <h4 class="textshadow">前一页面</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0014</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISBackTab</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>TabLayout 或者 AnimationTabLayout name</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISBackTab &quot;controlName&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_2838023a778dfaecdc212708f721b788">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-14 16:52:05&nbsp;
+                            </div>
+                            <h4 class="textshadow">下一页面</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0013</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISNextTab</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>TabLayout 或者 AnimationTabLayout name</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISNextTab &quot;controlName&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_c0c7c76d30bd3dcaefc96f40275bdc0a">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-13 19:19:19&nbsp;
+                            </div>
+                            <h4 class="textshadow">开始卸载</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0012</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISStartUnInstall</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>autoChanged</td>
+                                        <td>bool</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>是否自动切换下一页面</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISStartUnInstall &quot;true&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_f457c545a9ded88f18ecee47145a72c0">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-13 19:19:00&nbsp;
+                            </div>
+                            <h4 class="textshadow">开始安装</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0011</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISStartInstall</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            开始安装 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>autoChanged</td>
+                                        <td>bool</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>是否自动切换下一页面</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISStartInstall &quot;true&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_642e92efb79421734881b53e1e1b18b6">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-12-13 19:18:29&nbsp;
+                            </div>
+                            <h4 class="textshadow">窗体还原</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0010</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISNormalSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISNormalSkinEngine</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_67c6a1e7ce56d3d6fa748ab6d9af3fd7">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:27:52&nbsp;
+                            </div>
+                            <h4 class="textshadow">窗体最大化</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0009</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISMaxSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            窗体最大化 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISMaxSkinEngine</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_d9d4f495e875a2e075a1a4a6e1b9770f">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:26:52&nbsp;
+                            </div>
+                            <h4 class="textshadow">窗体最小化</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0008</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISMinSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            窗体最小化 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISMinSkinEngine</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_6c8349cc7260ae62e3b1396831a8398f">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-15 13:18:29&nbsp;
+                            </div>
+                            <h4 class="textshadow">绑定获取安装卸载细节</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0010</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISBindingDetail</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>显示细节控件名</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISBindingDetail &quot;progressDetail&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_f7177163c833dff4b38fc8d2872f1ec6">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-15 13:16:54&nbsp;
+                            </div>
+                            <h4 class="textshadow">绑定安装进度</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0009</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISBindingProgress</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            绑定安装进度 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>进度条控件名</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>进度条控件名</td>
+                                    </tr>
+                                    <tr>
+                                        <td>进度%比显示控件名</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>e.g. 100%</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISBindingProgress &quot;InstallProgressBar&quot; &quot;progressText&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_02e74f10e0327ad868d138f2b4fdd6f0">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:08:46&nbsp;
+                            </div>
+                            <h4 class="textshadow">设置程序DPI 类型</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">023</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>SetAwareness</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            设置程序DPI 类型 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>dpiType</td>
+                                        <td>int</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>DPI 类型</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>PROCESS_DPI_UNAWARE = 0,
+          PROCESS_SYSTEM_DPI_AWARE = 1,
+          PROCESS_PER_MONITOR_DPI_AWARE = 2
+          第一种Unaware, 该种方式是告诉系统， 我的程序不支持DPI aware, 请通过DWM虚拟化帮我们实现。 该方式和上面Win7/Win8对高DPI的支持的实现基本一样，主要区别是它通过GetWindowRect取到的坐标都是经过DWM缩放后的， 无论对方窗口是不是支持DWM虚拟化。
+          第二种方式是System DPI aware， 该方式下告诉系统， 我的程序会在启动的显示器上自己支持DPI aware, 所以不需要对我进行DWM 虚拟化。 但是当我的程序被拖动到其他DPI不一样的显示器时， 请对我们先进行system DWM虚拟化缩放。
+          第三种方式是Per Monitor DPI aware, 该方式是告诉系统， 请永远不要对我进行DWM虚拟化，我会自己针对不同的Monitor的DPi缩放比率进行缩放。</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">暂时功能关闭</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_4e732ced3463d06de0ca9a15b6153677">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:07:04&nbsp;
+                            </div>
+                            <h4 class="textshadow">设置窗体宽高</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">022</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISResize</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            设置窗体宽高 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>width</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>宽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>height</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>高</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISResize &quot;560&quot; &quot;570&quot;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">在XML 布局文件中，不能设置 maxinfo= mininfo
+如果不想鼠标拖拽修改窗体大小可以设置
+sizebox=&quot;0,0,0,0&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_8e296a067a37563370ded05f5a3bf3ec">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:24:57&nbsp;
+                            </div>
+                            <h4 class="textshadow">设置当前页</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">021</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISSetTabLayoutCurrentIndex</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            设置当前页 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>tabName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>TabLayout Name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>currentIndex</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>页码</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISSetTabLayoutCurrentIndex “tabName” ”1“</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_1ff1de774005f8da13f42943881c655f">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-11-01 18:13:32&nbsp;
+                            </div>
+                            <h4 class="textshadow">显示MessageBox</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">020</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISMessageBox</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            显示MessageBox </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>tittleText</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>标题内容</td>
+                                    </tr>
+                                    <tr>
+                                        <td>infoText</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>信息</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISMessageBox &quot;提示&quot; &quot;你真帅！&quot;
+Pop $0
+${If} $0 == &quot;1&quot;
+    MessageBox MB_OK &quot;Ok&quot;
+ ${ElseIf} $0 == &quot;0&quot;
+    MessageBox MB_OK &quot;Cancel&quot;
+${EndIf}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_37693cfc748049e45d87b8c7d8b9aacd">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-28 17:36:03&nbsp;
+                            </div>
+                            <h4 class="textshadow">初始化MessageBox</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">018</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">int</kbd> - <kbd>NSISInitMessageBox</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            初始化MessageBox </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>xmlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>布局文件XML的名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tittleControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>标题控件名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>textControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>提示内容控件名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>closeBtnControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>关闭按钮控件名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>okBtnControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>确定按钮控件名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cancelBtnControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>取消按钮控件名字</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISInitMessageBox&quot;MessageBox.xml&quot; &quot;TitleLab&quot; &quot;TextLab&quot; &quot;CloseBtn&quot; &quot;YESBtn&quot; &quot;NOBtn&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_b6d767d2f8ed5d21a44b0e5886680cb9">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-11-03 11:14:38&nbsp;
+                            </div>
+                            <h4 class="textshadow">退出安装</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">017</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISExitSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            窗体退出（退出安装） </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISExitSkinEngine “true / false”
+如果启用了动画，当参数为 true，动画退出，false 直接退出</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">nsSkinEngine::NSISExitSkinEngine “true”
+需要与
+NSISInitAnimationBkControl
+NSISStartAnimationBkControl
+NSISStopAnimationBkControl
+需成对使用</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_3c59dc048e8850243be8079a5c74d079">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:23:32&nbsp;
+                            </div>
+                            <h4 class="textshadow">隐藏界面</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">016</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISHideSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            隐藏界面 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISHideSkinEngine</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_98f13708210194c475687be6106a3b84">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:23:20&nbsp;
+                            </div>
+                            <h4 class="textshadow">显示界面</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0015</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISShowSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            显示界面 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISShowSkinEngine</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_1f0e3dad99908345f7439f8ffabdffc4">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-17 15:04:00&nbsp;
+                            </div>
+                            <h4 class="textshadow">运行界面</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">014</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISRunSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            运行界面 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>isShow</td>
+                                        <td>bool</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>是否显示</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISRunSkinEngine “true”</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_6f4922f45568161a8cdf4ad2299f6d23">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:22:47&nbsp;
+                            </div>
+                            <h4 class="textshadow">文件夹选择窗</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">013</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISSelectFolderDialog</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            文件夹选择窗 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>tittle</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>标题（例如： 请选择文件夹）</td>
+                                    </tr>
+                                    <tr>
+                                        <td>defaltDir</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>初始化打开位置</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISSelectFolderDialog &quot;请选择文件夹&quot; &quot;C:/XXX&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_70efdf2ec9b086079795c442636b55fb">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-27 14:25:29&nbsp;
+                            </div>
+                            <h4 class="textshadow">发送消息 ｛3.0之后已废弃，移到辅助插件｝</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">012</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISSendMessage</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            发送消息 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>hwnd</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>消息HWND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>messageId</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>消息ID</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WPARAM</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>WPARAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LPARAM</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>LPARAM</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISSendMessage $Dialog WM_NSISOPENURL &quot;http://www.baidu.com/&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_c74d97b01eae257e44aa9d5bade97baf">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 08:42:34&nbsp;
+                            </div>
+                            <h4 class="textshadow">杀死定时器</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">011</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISKillTimer</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            杀死定时器 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>timeId</td>
+                                        <td>int</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>TimerID(一般是回调函数的ID)</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>Var varShowInstTimerId
+
+Function OnTimerShowInstFunc
+FunctionEnd
+
+GetFunctionAddress $varShowInstTimerId OnTimerShowInstFunc
+nsSkinEngine::NSISKillTimer $varShowInstTimerId</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_9bf31c7ff062936a96d3c8bd1f8f2ff3">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 08:42:55&nbsp;
+                            </div>
+                            <h4 class="textshadow">创建定时器</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">010</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISCreatTimer</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>timerId</td>
+                                        <td>int</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>TimerID(一般是回调函数的ID)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>interval</td>
+                                        <td>int</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>间隔</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>Var varShowInstTimerId
+
+Function OnTimerShowInstFunc
+FunctionEnd
+
+GetFunctionAddress $varShowInstTimerId OnTimerShowInstFunc
+nsSkinEngine::NSISCreatTimer $varShowInstTimerId 1000</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_aab3238922bcc25a6f606eb525ffdc56">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:22:08&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取控件数据</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">009</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISGetControlData</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            获取控件数据 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>control的名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dataType</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>数据的类型 e.g. 1. text; 2. bkimage; 3. link; 4. enable</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISGetControlData &quot;label&quot; &quot;text&quot;
+Pop $0
+MessageBox MB_OK $0</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">根据查询 dataType  返回对应类型 string int bool</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_c51ce410c124a10e0db5e4b97fc2af39">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:21:49&nbsp;
+                            </div>
+                            <h4 class="textshadow">为控件设置数据</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">008</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISSetControlData</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            为控件设置数据 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>control的名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>赋给control的数据</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dataType</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>数据的类型 (e.g.： 1. text; 2. bkimage; 3. link; 4. enable )</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISSetControlData &quot;welcomeText&quot;  &quot;false&quot;  &quot;visible&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_c20ad4d76fe97759aa27a0c99bff6710">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:21:29&nbsp;
+                            </div>
+                            <h4 class="textshadow">为控件绑定对应的事件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">007</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISOnControlBindNSISScript</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            为控件绑定对应的事件，有事件消息时执行对应代码 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>控件名</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pFunc</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>回调事件函数地址</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>GetFunctionAddress $0 OnInstallCancelFunc
+nsSkinEngine::NSISOnControlBindNSISScript &quot;sysCloseBtn&quot; $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_6512bd43d9caa6e02c990b0a82652dca">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-24 14:21:07&nbsp;
+                            </div>
+                            <h4 class="textshadow">显示许可证文件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">006</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISShowLicense</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            显示许可证文件 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>richeditControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>richedit control的名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>licenseText</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>许可协议文件名字</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISShowLicense &quot;acceptInfo&quot; &quot;license.txt&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_d3d9446802a44259755d38e6d163e820">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-28 17:34:26&nbsp;
+                            </div>
+                            <h4 class="textshadow">判断特定的control是否存在</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">005</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">bool</kbd> - <kbd>NSISFindControl</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            判断特定的control是否存在 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>控件名称</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISFindControl &quot;sysCloseBtn&quot;
+Pop $0
+${If} $0 == &quot;0&quot;
+   ; dosome
+${else}
+    MessageBox MB_OK &quot;Do not have sysCloseBtn&quot;
+${EndIf}</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_45c48cce2e2d7fbdea1afc51c7c6ad26">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-22 15:13:28&nbsp;
+                            </div>
+                            <h4 class="textshadow">停止动画背景控件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">003</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISStopAnimationBkControl</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            停止动画背景控件 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>控件名称</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISStopAnimationBkControl &quot;WizardTab&quot;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">NSISInitAnimationBkControl
+NSISStartAnimationBkControl
+NSISStopAnimationBkControl
+需成对使用</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_c9f0f895fb98ab9159f51fd0297e236d">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-01-22 15:13:00&nbsp;
+                            </div>
+                            <h4 class="textshadow">背景控件开始动画</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">002</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISStartAnimationBkControl</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            背景控件开始动画 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>controlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>控件名称</td>
+                                    </tr>
+                                    <tr>
+                                        <td>currentFrames</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>动画当前帧号</td>
+                                    </tr>
+                                    <tr>
+                                        <td>framesSpeed</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>帧频率（ms/帧）</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISStartAnimationBkControl &quot;WizardTab&quot; &quot;0&quot; &quot;88&quot;
+Pop $timerId</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">NSISInitAnimationBkControl
+NSISStartAnimationBkControl
+NSISStopAnimationBkControl
+需成对使用</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_8f14e45fceea167a5a36dedd4bea2543">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-02-21 14:31:58&nbsp;
+                            </div>
+                            <h4 class="textshadow">初始化动画背景控件</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">001</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISInitAnimationBkControl</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            初始化动画背景控件 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>animationControlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>动画控件名称</td>
+                                    </tr>
+                                    <tr>
+                                        <td>animationSkinDir</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>动画皮肤路径</td>
+                                    </tr>
+                                    <tr>
+                                        <td>animationCount</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>动画总帧数</td>
+                                    </tr>
+                                    <tr>
+                                        <td>animationJumpFrames</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>动画跳转帧号｛如开启循环，将会在此到最大帧数循环｝</td>
+                                    </tr>
+                                    <tr>
+                                        <td>animationIsLoop</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>动画跳转帧是否循环</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ispositive</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>正序/倒序</td>
+                                    </tr>
+                                    <tr>
+                                        <td>callBackFrames</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>回调帧数</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pFuncPositiveCallback</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>正序回调帧触发函数地址</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pFuncpFuncPositiveCallbackCallback</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>倒序回调帧触发函数地址</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>GetFunctionAddress $0 goAheadCallback
+GetFunctionAddress $1 retreatCallback
+nsSkinEngine::NSISInitAnimationBkControl &quot;windowbk&quot; &quot;${UNINSTALL_DIR}step&quot; &quot;120&quot; &quot;60&quot; &quot;1&quot; “1” &quot;28&quot; $0 $1</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">在 主窗体初始化 函数尾部 初始化
+NSISInitAnimationBkControl
+NSISStartAnimationBkControl
+NSISStopAnimationBkControl
+需成对使用</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_1679091c5a880faf6fb5e6087eb1b2dc">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-10-25 10:16:09&nbsp;
+                            </div>
+                            <h4 class="textshadow">主窗体初始化</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">000</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">int</kbd> - <kbd>NSISInitSkinEngine</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            主窗体初始化函数 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>skinDir</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>skin的路径</td>
+                                    </tr>
+                                    <tr>
+                                        <td>skinXmlName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>skin布局XML文件名</td>
+                                    </tr>
+                                    <tr>
+                                        <td>appTabName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>安装页面tab的名字</td>
+                                    </tr>
+                                    <tr>
+                                        <td>isTabSupportAnimation</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>安装页面tab是否支持动画</td>
+                                    </tr>
+                                    <tr>
+                                        <td>appName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>安装包名称</td>
+                                    </tr>
+                                    <tr>
+                                        <td>key</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>注册码｛获取邀请码并自行到http://www.aceui.cn/license/生成｝</td>
+                                    </tr>
+                                    <tr>
+                                        <td>appIconName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>程序ICON名</td>
+                                    </tr>
+                                    <tr>
+                                        <td>isTop</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>程序是否置顶</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsSkinEngine::NSISInitSkinEngine /NOUNLOAD &quot;${UNINSTALL_DIR}&quot; &quot;InstallPackages.xml&quot; &quot;WizardTab&quot; &quot;false&quot; &quot;115浏览器&quot; &quot;3546da8ed962e968ee8624549cbcae89&quot; &quot;app.ico&quot; &quot;true&quot;
+   Pop $Dialog</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">在 onInit 后被执行</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <!--接口详情列表与接口管理end-->
+                </div>
+                <!--主窗口end-->
+            </div>
+        </div>
+    </div>
+    <script src="./res/jquery.min.js"></script>
+    <script src="./res/jquery.cookie.js"></script>
+    <script src="./res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

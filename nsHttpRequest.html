@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+    <link href="./res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./res/html5shiv.min.js"></script>
+    <script src="./res/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="height:100%">
+    <div class="container-fluid" style="background:white;height:100%;">
+        <div class="row" style="height:100%;">
+            <!--左侧导航start-->
+            <div id="navbar" class="col-md-3"
+                style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+                <div style="height:50px;font-size:30px;line-height:50px;">
+                    <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none"
+                        href="index.html">
+                        <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+                        <span style="position: relative;top:-3px;">AceUI API<span
+                                style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+                    </a>
+                    </span>
+                </div>
+                <!--导航-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="searchapi" placeholder="search here"
+                        onkeyup="search('api',this)">
+                </div>
+                <div class="list">
+                    <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_17e62166fc8586dfa4d1bc0e1742c08b">
+                            <a href="#info_api_17e62166fc8586dfa4d1bc0e1742c08b"
+                                id="menu_17e62166fc8586dfa4d1bc0e1742c08b">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                返回码解释 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="17e62166fc8586dfa4d1bc0e1742c08b">返回码解释<|-|>0<|-|>
+                                    <|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:4:"NONE";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:0:"";}}
+                                            <|-|>返回码解释<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c16a5320fa475530d9583c34fd356ef5">
+                            <a href="#info_api_c16a5320fa475530d9583c34fd356ef5"
+                                id="menu_c16a5320fa475530d9583c34fd356ef5">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                https + get </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="c16a5320fa475530d9583c34fd356ef5">https + get<|-|>003<|-|>https 协议，
+                                    get方式<|-|>返回值为 0 发送成功，具体参考Curl 返回码<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:3:"url";i:1;s:4:"data";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:12:"发送地址";i:1;s:12:"发送数据";}}
+                                            <|-|>NSISHttpsGetData<|-|>int<|-|>int</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_34173cb38f07f89ddbebc2ac9128303f">
+                            <a href="#info_api_34173cb38f07f89ddbebc2ac9128303f"
+                                id="menu_34173cb38f07f89ddbebc2ac9128303f">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                http + get </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="34173cb38f07f89ddbebc2ac9128303f">http + get<|-|>002<|-|>http 协议，get
+                                    方式<|-|>返回值为 0 发送成功，具体参考Curl 返回码<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:3:"url";i:1;s:4:"data";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:15:"发送的地址";i:1;s:15:"发送的数据";}}
+                                            <|-|>NSISHttpGetData<|-|>int<|-|>int</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6ea9ab1baa0efb9e19094440c317e21b">
+                            <a href="#info_api_6ea9ab1baa0efb9e19094440c317e21b"
+                                id="menu_6ea9ab1baa0efb9e19094440c317e21b">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                https + post </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="6ea9ab1baa0efb9e19094440c317e21b">https + post<|-|>001<|-|>https
+                                    协议，post方式<|-|>返回值为 0 发送成功，具体参考Curl 返回码<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:3:"url";i:1;s:4:"data";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:12:"发送地址";i:1;s:12:"发送数据";}}
+                                            <|-|>NSISHttpsPostData<|-|>int<|-|>int</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_33e75ff09dd601bbe69f351039152189">
+                            <a href="#info_api_33e75ff09dd601bbe69f351039152189"
+                                id="menu_33e75ff09dd601bbe69f351039152189">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                http + post </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="33e75ff09dd601bbe69f351039152189">http + post<|-|>000<|-|>http 协议 post
+                                    方式发送数据<|-|>返回值为 0 发送成功，具体参考Curl 返回码<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:3:"url";i:1;s:4:"data";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:16:"发送Url
+                                            地址";i:1;s:18:"要发送的数据";}}<|-|>NSISHttpPostData<|-|>int<|-|>int</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+                </div>
+                <form action="?act=api&tag=4&op=add" method="post">
+                </form>
+                <!--jquery模糊查询start-->
+                <script>
+                    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+                    function search(type, obj) {
+                        var $find = $.trim($(obj).val());//得到搜索内容
+                        if (type == 'cate') {//对接口分类进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#info_" + menu_id).show();
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                            }
+                        } else if (type == 'api') {//对接口进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();//左侧导航菜单隐藏
+                                $(".info_api").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#api_" + menu_id).show();//左侧导航菜单 部份 隐藏
+                                    $("#info_api_" + menu_id).show();//接口详情 部份 隐藏
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+                            }
+                        }
+                    }
+
+                    window.onload = function () {
+                        //添加关闭,打开左侧菜单的功能
+                        var status_flg = "&lt"; var cursor = "w-resize"
+                        var navbarButton = '<div onclick="navbar(this)" ' +
+                            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:' + cursor + ';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+                            status_flg +
+                            '</div>'
+                        //$('body').append(navbarButton);
+                    }
+                    // 全屏和normal
+                    function navbar(obj) {
+                        if ($('#mainwindow').hasClass('col-md-9')) {
+                            $(obj).html('&gt;');
+                            $(obj).css("cursor", "e-resize");
+                            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+                            $('#navbar').hide();
+                            $.cookie($COOKIE_KEY, '1');
+                        } else {
+                            $(obj).html('&lt;');
+                            $(obj).css("cursor", "w-resize");
+                            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+                            $('#navbar').show();
+                            $.cookie($COOKIE_KEY, '0');
+                        }
+                    }
+                </script>
+                <!--jquery模糊查询end-->
+                <!--end-->
+            </div>
+            <!--左侧导航end-->
+            <div id="mainwindow" class="col-md-9"
+                style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+                <!--顶部导航start-->
+                <div class="textshadow"
+                    style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                    <span> <a class="home" href="index.html">主页</a> - nsHttpRequest</span>
+                </div>
+                <!--顶部导航end-->
+                <!--主窗口start-->
+                <div style="padding:16px;">
+                    <!--接口详情列表与接口管理start-->
+                    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_17e62166fc8586dfa4d1bc0e1742c08b">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-11 12:38:31&nbsp;
+                            </div>
+                            <h4 class="textshadow">返回码解释</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">0</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>返回码解释</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>NONE</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>CURLE_OK（0）
+所有罚款。继续像往常一样。
+
+CURLE_UNSUPPORTED_PROTOCOL（1）
+
+你的URL传递给libcurl的使用协议，这libcurl的不支持。支持可能是你没有使用一个编译时的选项，它可以是一个拼写错的协议字符串，或者只是一个协议的libcurl没有代码。
+
+
+CURLE_FAILED_INIT（2）
+
+非常早期的初始化代码失败。这可能是内部错误或问题，资源问题，一些基本的东西可能无法完成初始化时间。
+
+CURLE_URL_MALFORMAT（3）
+
+该网址的格式不正确。
+
+CURLE_NOT_BUILT_IN（4）
+
+libcurl的内置在​​一个编译时决定所要求的功能，协议或购股权没有被发现。这意味着，一个功能或选项是不启用或明确禁用的libcurl建时，为了得到它的功能，你必须得到一个重建的libcurl的。
+
+CURLE_COULDNT_RESOLVE_PROXY（5）
+
+无法解析代理服务器。代理主机无法得到解决。
+
+CURLE_COULDNT_RESOLVE_HOST（6）
+
+无法解析主机。给定的远程主机没有得到解决。
+
+CURLE_COULDNT_CONNECT（7）
+
+connect（）的主机或代理失败。
+
+CURLE_FTP_WEIRD_SERVER_REPLY（8）
+
+连接到一个FTP服务器后，libcurl的预期得到一定的回复返回。这个错误代码表示，它有一个奇怪的或坏的答复。指定的远程服务器可能不是一个确定的FTP服务器。
+
+CURLE_REMOTE_ACCESS_DENIED（9）
+
+我们被拒绝访问的资源的URL。对于FTP，发生这种情况而力图改变的远程目录。
+
+CURLE_FTP_ACCEPT_FAILED（10）
+
+在等待服务器的连接时，一个主动FTP会话使用，被送到控制连接或类似的错误代码。
+
+CURLE_FTP_WEIRD_PASS_REPLY（11）
+
+发送到服务器的FTP密码后，libcurl的预计正确的答复。此错误代码指示返回了意外的代码。
+
+CURLE_FTP_ACCEPT_TIMEOUT（12）
+
+在当前的FTP会话在等待服务器连接，CURLOPT_ACCEPTTIMOUT_MS（或内部默认），超时过期。
+
+CURLE_FTP_WEIRD_PASV_REPLY（13）
+
+libcurl的失败作为一个PASV或EPSV命令从服务器得到一个合理的结果。服务器是有缺陷的。
+
+CURLE_FTP_WEIRD_227_FORMAT（14）
+
+FTP服务器返回一个227行作为一个PASV命令的响应。如果libcurl的无法解析该行，此返回代码被传递回。
+
+CURLE_FTP_CANT_GET_HOST（15）
+
+内部故障查找主机使用新的连接。
+
+CURLE_FTP_COULDNT_SET_TYPE（17）
+
+收到一个错误，当试图传送模式设置为二进制或ASCII。
+
+CURLE_PARTIAL_FILE（18）
+
+文件传输，短于或大于预期。发生这种情况时，服务器首先报告预期的传输大小，然后提供数据不匹配前面给出的大小。
+
+CURLE_FTP_COULDNT_RETR_FILE（19）
+
+这是一个奇怪的回答“RETR”命令或一个零字节传输完成。
+
+CURLE_QUOTE_ERROR（21）
+
+当发送到远程服务器，自定义的“QUOTE”命令的一个命令返回的错误代码为400或更高（对于FTP）或表示不成功的完成命令。
+
+CURLE_HTTP_RETURNED_ERROR（22）
+
+这是返回CURLOPT_FAILONERROR设置为TRUE和HTTP服务器返回的错误代码是&gt; = 400。
+
+CURLE_WRITE_ERROR（23）
+
+发生错误，写作时接收到的数据到本地文件，或者返回错误libcurl的一个写回调。
+
+CURLE_UPLOAD_FAILED（25）
+
+开始上载失败。对于FTP，服务器通常否认的STOR命令。通常的错误缓冲区包含了服务器的解释。
+
+CURLE_READ_ERROR（26）
+
+有一个问题读取本地文件或返回一个错误的读回调。
+
+CURLE_OUT_OF_MEMORY（27）
+
+内存分配请求失败。这是严重的不良和活动，如果发生过严重搞砸了。
+
+CURLE_OPERATION_TIMEDOUT（28）
+
+操作超时。根据条件达到指定的超时期间。
+
+CURLE_FTP_PORT_FAILED（30）
+
+FTP PORT命令返回错误。这主要是当你还没有足够的地址指定了一个良好的libcurl的使用。SeeCURLOPT_FTPPORT。
+
+CURLE_FTP_COULDNT_USE_REST（31）
+
+FTP REST命令返回错误。如果服务器是明智的，这不应该发生。
+
+CURLE_RANGE_ERROR（33）
+
+服务器不支持或接受范围请求。
+
+CURLE_HTTP_POST_ERROR（34）
+
+这是一个奇怪的错误，主要发生是由于内部的混乱。
+
+CURLE_SSL_CONNECT_ERROR（35）
+
+出现问题的地方，在SSL / TLS握手。你真正想要的的错误缓冲区和阅读邮件，因为它针对问题稍微。可能是证书（文件格式，路径，权限），密码，和其他人。
+
+CURLE_BAD_DOWNLOAD_RESUME（36）
+
+下载无法恢复，因为指定的偏移量为文件的边界。
+
+CURLE_FILE_COULDNT_READ_FILE（37）
+
+无法打开的文件FILE :/ /。最有可能的，因为该文件的路径不能识别现有文件。你是否检查文件的权限？
+
+CURLE_LDAP_CANNOT_BIND（38）
+
+LDAP无法绑定。LDAP绑定操作失败。
+
+CURLE_LDAP_SEARCH_FAILED（39）
+
+LDAP搜索失败。
+
+CURLE_FUNCTION_NOT_FOUND（41）
+
+函数没有找到。一个必需的zlib的功能没有被发现。
+
+CURLE_ABORTED_BY_CALLBACK（42）
+
+通过回调中止。返回的回调“中止”libcurl的。
+
+CURLE_BAD_FUNCTION_ARGUMENT（43）
+
+内部错误。函数调用了一个错误的参数。
+
+CURLE_INTERFACE_FAILED（45）
+
+接口错误。指定的出接口不能使用。设置接口使用传出连接的源IP地址与CURLOPT_INTERFACE。
+
+CURLE_TOO_MANY_REDIRECTS（47）
+
+过多的重定向。以下重定向时，libcurl的创下的最高金额。设置您的与CURLOPT_MAXREDIRS限制。
+
+CURLE_UNKNOWN_OPTION（48）
+
+无法识别的选项传递给libcurl的/。请参阅相应的文档。这是最有可能在程序中使用libcurl的问题。的的错误缓冲区可能包含准确的选项，它涉及更具体的信息。
+
+CURLE_TELNET_OPTION_SYNTAX（49）
+
+telnet选项字符串被非法格式化。
+
+CURLE_PEER_FAILED_VERIFICATION（51）
+
+远程服务器的SSL证书或SSH的MD5指纹被认为是不正常的。
+
+CURLE_GOT_NOTHING（52）
+
+没有从服务器返回的，和得到什么的情况下，被认为是一个错误。
+
+CURLE_SSL_ENGINE_NOTFOUND（53）
+
+未找到指定的加密引擎。
+
+CURLE_SSL_ENGINE_SETFAILED（54）
+
+设置所选的SSL加密引擎，默认情况下失败！
+
+CURLE_SEND_ERROR（55）
+
+发送网络数据失败。
+
+CURLE_RECV_ERROR（56）
+
+如果接收网络数据。
+
+CURLE_SSL_CERTPROBLEM（58）
+
+与当地的客户端证书的问题。
+
+CURLE_SSL_CIPHER（59）
+
+无法使用指定的密码。
+
+CURLE_SSL_CACERT（60）
+
+同侪凭证不能与已知的CA证书进行身份验证。
+
+CURLE_BAD_CONTENT_ENCODING（61）
+
+无法识别的传输编码。
+
+CURLE_LDAP_INVALID_URL（62）
+
+无效的LDAP URL。
+
+CURLE_FILESIZE_EXCEEDED（63）
+
+最大文件大小超过。
+
+CURLE_USE_SSL_FAILED（64）
+
+要求FTP SSL水平失败。
+
+CURLE_SEND_FAIL_REWIND（65）
+
+在做了一个发送操作卷曲，倒带重传的数据，但的倒带操作失败。
+
+CURLE_SSL_ENGINE_INITFAILED（66）
+
+SSL发动机启动失败。
+
+CURLE_LOGIN_DENIED（67）
+
+远程服务器拒绝卷曲登录（加入7.13.1）
+
+CURLE_TFTP_NOTFOUND（68）
+
+TFTP服务器上找不到文件。
+
+CURLE_TFTP_PERM（69）
+
+TFTP服务器上的权限问题。
+
+CURLE_REMOTE_DISK_FULL（70）
+
+出在服务器上的磁盘空间。
+
+CURLE_TFTP_ILLEGAL（71）
+
+非法的TFTP操作。
+
+CURLE_TFTP_UNKNOWNID（72）
+
+未知TFTP传输ID。
+
+CURLE_REMOTE_FILE_EXISTS（73）
+
+文件已经存在，并不会被覆盖。
+
+CURLE_TFTP_NOSUCHUSER（74）
+
+这个错误不应该被返回正常工作的TFTP服务器。
+
+CURLE_CONV_FAILED（75）
+
+字符转换失败。
+
+CURLE_CONV_REQD（76）
+
+调用者必须注册转换回调。
+
+CURLE_SSL_CACERT_BADFILE（77）
+
+问题读取SSL证书（路径的访问权限？）
+
+CURLE_REMOTE_FILE_NOT_FOUND（78）
+
+不存在的URL引用的资源。
+
+CURLE_SSH（79）
+
+未指定的错误发生在SSH会话。
+
+CURLE_SSL_SHUTDOWN_FAILED（80）
+
+关闭SSL连接失败。
+
+CURLE_AGAIN（81）
+
+Socket是没有准备好发送/接收等待，直到它准备好了，然后再试一次。此返回代码仅返回从 curl_easy_recv（3）  和  （3） （加入7.18.2 curl_easy_send），
+
+CURLE_SSL_CRL_BADFILE（82）
+
+无法加载CRL文件（在7.19.0版加入）
+
+CURLE_SSL_ISSUER_ERROR（83）
+
+发行人检查失败（在7.19.0版加入）
+
+CURLE_FTP_PRET_FAILED（84）
+
+FTP服务器不理解的PRET命令，所有不支持给定的参数。要小心时usingCURLOPT_CUSTOMREQUEST，自定义列表“命令将发送PRET CMD前PASV以及。（添加在7.20.0）
+
+CURLE_RTSP_CSEQ_ERROR（85）
+
+RTSP的Cseq号码不匹配。
+
+CURLE_RTSP_SESSION_ERROR（86）
+
+RTSP会话标识符不匹配。
+
+CURLE_FTP_BAD_FILE_LIST（87）
+
+无法，解析FTP文件列表（在FTP通配符下载）。
+
+CURLE_CHUNK_FAILED（88）
+
+块回调报告错误。
+
+CURLE_OBSOLETE *
+
+这些错误代码永远不会返回。它们被用来在一个老的libcurl版本，当前未使用。</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_c16a5320fa475530d9583c34fd356ef5">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-11 12:29:23&nbsp;
+                            </div>
+                            <h4 class="textshadow">https + get</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">003</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">int</kbd> - <kbd>NSISHttpsGetData</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            https 协议， get方式 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>url</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送地址</td>
+                                    </tr>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送数据</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsHttpRequest::NSISHttpsGetData “www.baidu.com” “cool”</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回值为 0 发送成功，具体参考Curl 返回码</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_34173cb38f07f89ddbebc2ac9128303f">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-11 12:29:32&nbsp;
+                            </div>
+                            <h4 class="textshadow">http + get</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">002</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">int</kbd> - <kbd>NSISHttpGetData</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            http 协议，get 方式 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>url</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送的地址</td>
+                                    </tr>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送的数据</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsHttpRequest::NSISHttpGetData “www.baidu.com” “cool”</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回值为 0 发送成功，具体参考Curl 返回码</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_6ea9ab1baa0efb9e19094440c317e21b">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-11 12:29:46&nbsp;
+                            </div>
+                            <h4 class="textshadow">https + post</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">001</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">int</kbd> - <kbd>NSISHttpsPostData</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            https 协议，post方式 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>url</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送地址</td>
+                                    </tr>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送数据</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsHttpRequest::NSISHttpsPostData “www.baidu.com” “cool”</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回值为 0 发送成功，具体参考Curl 返回码</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_33e75ff09dd601bbe69f351039152189">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2016-01-11 12:29:53&nbsp;
+                            </div>
+                            <h4 class="textshadow">http + post</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">000</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">int</kbd> - <kbd>NSISHttpPostData</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            http 协议 post 方式发送数据 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>url</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>发送Url 地址</td>
+                                    </tr>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>要发送的数据</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsHttpRequest::NSISHttpPostData “www.baidu.com” &quot;cool&quot;</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">返回值为 0 发送成功，具体参考Curl 返回码</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <!--接口详情列表与接口管理end-->
+                </div>
+                <!--主窗口end-->
+            </div>
+        </div>
+    </div>
+    <script src="./res/jquery.min.js"></script>
+    <script src="./res/jquery.cookie.js"></script>
+    <script src="./res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

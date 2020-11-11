@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+    <link href="./res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./res/html5shiv.min.js"></script>
+    <script src="./res/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="height:100%">
+    <div class="container-fluid" style="background:white;height:100%;">
+        <div class="row" style="height:100%;">
+            <!--左侧导航start-->
+            <div id="navbar" class="col-md-3"
+                style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+                <div style="height:50px;font-size:30px;line-height:50px;">
+                    <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none"
+                        href="index.html">
+                        <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+                        <span style="position: relative;top:-3px;">AceUI API<span
+                                style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+                    </a>
+                    </span>
+                </div>
+                <!--导航-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="searchapi" placeholder="search here"
+                        onkeyup="search('api',this)">
+                </div>
+                <div class="list">
+                    <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_ad61ab143223efbc24c7d2583be69251">
+                            <a href="#info_api_ad61ab143223efbc24c7d2583be69251"
+                                id="menu_ad61ab143223efbc24c7d2583be69251">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                ping某地址，看是否通 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="ad61ab143223efbc24c7d2583be69251">ping某地址，看是否通<|-|>000003<|-|>
+                                    <|-|>因为处理中含有 sleep（1000）；
+                                        所有需要再线程中处理<|-|>
+                                            a:4:{s:4:"name";a:2:{i:0;s:10:"wwwAddress";i:1;s:12:"tempFilePath";}s:7:"default";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:3:"des";a:2:{i:0;s:43:"服务器地址
+                                            例如 www.baidu.com 或 ip";i:1;s:30:"结果临时文件存放地址";}}<|-|>NSISPingSomeWWW<|-|>void
+                                                    <|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a1d0c6e83f027327d8461063f4ac58a6">
+                            <a href="#info_api_a1d0c6e83f027327d8461063f4ac58a6"
+                                id="menu_a1d0c6e83f027327d8461063f4ac58a6">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取本地时间 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="a1d0c6e83f027327d8461063f4ac58a6">获取本地时间<|-|>010<|-|>获取本地时间｛秒｝<|-|>
+                                        <|-|>N;<|-|>NSISGetLocalTimeString<|-|>string<|-|>string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3416a75f4cea9109507cacd8e2f2aefc">
+                            <a href="#info_api_3416a75f4cea9109507cacd8e2f2aefc"
+                                id="menu_3416a75f4cea9109507cacd8e2f2aefc">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取父进程名 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="3416a75f4cea9109507cacd8e2f2aefc">获取父进程名<|-|>009<|-|>获取父进程名<|-|>
+                                        应用于，获取是被什么应用吊起的卸载<|-|>N;<|-|>NSISGetParentProcessName<|-|>string<|-|>
+                                                        string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d645920e395fedad7bbbed0eca3fe2e0">
+                            <a href="#info_api_d645920e395fedad7bbbed0eca3fe2e0"
+                                id="menu_d645920e395fedad7bbbed0eca3fe2e0">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                URL编码 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="d645920e395fedad7bbbed0eca3fe2e0">URL编码<|-|>008<|-|>URL编码<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:4:"data";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:21:"需要编码的内容";}}
+                                            <|-|>NSISUrlEncode<|-|>string<|-|>string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d67d8ab4f4c10bf22aa353e27879133c">
+                            <a href="#info_api_d67d8ab4f4c10bf22aa353e27879133c"
+                                id="menu_d67d8ab4f4c10bf22aa353e27879133c">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取Mac 地址 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="d67d8ab4f4c10bf22aa353e27879133c">获取Mac 地址<|-|>007<|-|>获取Mac 地址<|-|>
+                                        <|-|>N;<|-|>NSISGetMacAddress<|-|>string<|-|>string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a5771bce93e200c36f7cd9dfd0e5deaa">
+                            <a href="#info_api_a5771bce93e200c36f7cd9dfd0e5deaa"
+                                id="menu_a5771bce93e200c36f7cd9dfd0e5deaa">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取UUID </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="a5771bce93e200c36f7cd9dfd0e5deaa">获取UUID<|-|>006<|-|>获取UUID<|-|>
+                                        <|-|>N;<|-|>NSISGetAppUUID<|-|>string<|-|>string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a5bfc9e07964f8dddeb95fc584cd965d">
+                            <a href="#info_api_a5bfc9e07964f8dddeb95fc584cd965d"
+                                id="menu_a5bfc9e07964f8dddeb95fc584cd965d">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                获取唯一机器码 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="a5bfc9e07964f8dddeb95fc584cd965d">获取唯一机器码<|-|>005<|-|>获取唯一机器码<|-|>
+                                        <|-|>N;<|-|>NSISGetHardSNW<|-|>string<|-|>string</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_19ca14e7ea6328a42e0eb13d585e4c22">
+                            <a href="#info_api_19ca14e7ea6328a42e0eb13d585e4c22"
+                                id="menu_19ca14e7ea6328a42e0eb13d585e4c22">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                根据目录，检查是否运行 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="19ca14e7ea6328a42e0eb13d585e4c22">根据目录，检查是否运行<|-|>004<|-|>
+                                    根据目录路径，检查是否有文件已运行<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:9:"directory";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:6:"路径";}}
+                                            <|-|>NSISIsProcessRunningByDirectory<|-|>bool<|-|>bool</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_1c383cd30b7c298ab50293adfecb7b18">
+                            <a href="#info_api_1c383cd30b7c298ab50293adfecb7b18"
+                                id="menu_1c383cd30b7c298ab50293adfecb7b18">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                根据文件名，检查是否运行 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="1c383cd30b7c298ab50293adfecb7b18">根据文件名，检查是否运行<|-|>003<|-|>
+                                    根据文件名称，检查文件是否已运行<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:8:"fileName";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:9:"文件名";}}
+                                            <|-|>NSISIsProcessRunningByFileName<|-|>bool<|-|>bool</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e369853df766fa44e1ed0ff613f563bd">
+                            <a href="#info_api_e369853df766fa44e1ed0ff613f563bd"
+                                id="menu_e369853df766fa44e1ed0ff613f563bd">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                根据路径，检查是否运行 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="e369853df766fa44e1ed0ff613f563bd">根据路径，检查是否运行<|-|>002<|-|>
+                                    根据文件完整路径，检查文件是否已运行<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:8:"filePath";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"文件路径";}}
+                                            <|-|>NSISIsProcessRunningByFilePath<|-|>bool<|-|>bool</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_182be0c5cdcd5072bb1864cdee4d3d6e">
+                            <a href="#info_api_182be0c5cdcd5072bb1864cdee4d3d6e"
+                                id="menu_182be0c5cdcd5072bb1864cdee4d3d6e">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                判断系统是否X64 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="182be0c5cdcd5072bb1864cdee4d3d6e">判断系统是否X64<|-|>001<|-|>检查系统是否是64位
+                                    <|-|>
+                                        <|-|>N;<|-|>NSISIsWow64<|-|>bool<|-|>bool</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6364d3f0f495b6ab9dcf8d3b5c6e0b01">
+                            <a href="#info_api_6364d3f0f495b6ab9dcf8d3b5c6e0b01"
+                                id="menu_6364d3f0f495b6ab9dcf8d3b5c6e0b01">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                删除目录 </a>
+                        </li>
+                        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+                        <span class="keyword" id="6364d3f0f495b6ab9dcf8d3b5c6e0b01">删除目录<|-|>000<|-|>解决 NSIS 自带 RMDir /r
+                                    在子线程中删除含有大文件目录失败<|-|>
+                                        <|-|>
+                                            a:4:{s:4:"name";a:1:{i:0;s:7:"fileDir";}s:7:"default";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:3:"des";a:1:{i:0;s:12:"目录路径";}}
+                                            <|-|>NSISDeleteFolder<|-|>void<|-|>void</span>
+                        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+                </div>
+                <form action="?act=api&tag=5&op=add" method="post">
+                </form>
+                <!--jquery模糊查询start-->
+                <script>
+                    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+                    function search(type, obj) {
+                        var $find = $.trim($(obj).val());//得到搜索内容
+                        if (type == 'cate') {//对接口分类进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#info_" + menu_id).show();
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                            }
+                        } else if (type == 'api') {//对接口进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();//左侧导航菜单隐藏
+                                $(".info_api").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#api_" + menu_id).show();//左侧导航菜单 部份 隐藏
+                                    $("#info_api_" + menu_id).show();//接口详情 部份 隐藏
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+                            }
+                        }
+                    }
+
+                    window.onload = function () {
+                        //添加关闭,打开左侧菜单的功能
+                        var status_flg = "&lt"; var cursor = "w-resize"
+                        var navbarButton = '<div onclick="navbar(this)" ' +
+                            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:' + cursor + ';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+                            status_flg +
+                            '</div>'
+                        //$('body').append(navbarButton);
+                    }
+                    // 全屏和normal
+                    function navbar(obj) {
+                        if ($('#mainwindow').hasClass('col-md-9')) {
+                            $(obj).html('&gt;');
+                            $(obj).css("cursor", "e-resize");
+                            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+                            $('#navbar').hide();
+                            $.cookie($COOKIE_KEY, '1');
+                        } else {
+                            $(obj).html('&lt;');
+                            $(obj).css("cursor", "w-resize");
+                            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+                            $('#navbar').show();
+                            $.cookie($COOKIE_KEY, '0');
+                        }
+                    }
+                </script>
+                <!--jquery模糊查询end-->
+                <!--end-->
+            </div>
+            <!--左侧导航end-->
+            <div id="mainwindow" class="col-md-9"
+                style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+                <!--顶部导航start-->
+                <div class="textshadow"
+                    style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                    <span> <a class="home" href="index.html">主页</a> - nsUtils</span>
+                </div>
+                <!--顶部导航end-->
+                <!--主窗口start-->
+                <div style="padding:16px;">
+                    <!--接口详情列表与接口管理start-->
+                    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_ad61ab143223efbc24c7d2583be69251">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2017-02-09 19:24:34&nbsp;
+                            </div>
+                            <h4 class="textshadow">ping某地址，看是否通</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">000003</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISPingSomeWWW</kbd>
+                            </div>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>wwwAddress</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>服务器地址 例如 www.baidu.com 或 ip</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tempFilePath</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>结果临时文件存放地址</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>Function .onInit
+    GetFunctionAddress $0 pingSomeWWW
+    BgWorker::CallAndWait
+FunctionEnd
+
+Function pingSomeWWW
+    nsUtils::NSISPingSomeWWW &quot;www.baidu.com&quot; &quot;$TEMPfuck.txt&quot;
+    Pop $1
+    MessageBox MB_OK &quot;$1&quot;
+FunctionEnd</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">因为处理中含有 sleep（1000）；
+所有需要再线程中处理</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_a1d0c6e83f027327d8461063f4ac58a6">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:56:26&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取本地时间</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">010</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISGetLocalTimeString</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            获取本地时间｛秒｝ </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISGetLocalTimeString
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_3416a75f4cea9109507cacd8e2f2aefc">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:53:49&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取父进程名</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">009</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISGetParentProcessName</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            获取父进程名 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISGetParentProcessName
+Pop $0</pre>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">备注</h5>
+                            <pre style="background:honeydew">应用于，获取是被什么应用吊起的卸载</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_d645920e395fedad7bbbed0eca3fe2e0">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:52:30&nbsp;
+                            </div>
+                            <h4 class="textshadow">URL编码</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">008</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISUrlEncode</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            URL编码 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>data</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>需要编码的内容</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISUrlEncode “cool”
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_d67d8ab4f4c10bf22aa353e27879133c">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:51:07&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取Mac 地址</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">007</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISGetMacAddress</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            获取Mac 地址 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISGetMacAddress
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_a5771bce93e200c36f7cd9dfd0e5deaa">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:50:28&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取UUID</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">006</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISGetAppUUID</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            获取UUID </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISGetAppUUID
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_a5bfc9e07964f8dddeb95fc584cd965d">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:49:30&nbsp;
+                            </div>
+                            <h4 class="textshadow">获取唯一机器码</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">005</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">string</kbd> - <kbd>NSISGetHardSNW</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            获取唯一机器码 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISGetHardSNW
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_19ca14e7ea6328a42e0eb13d585e4c22">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:46:13&nbsp;
+                            </div>
+                            <h4 class="textshadow">根据目录，检查是否运行</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">004</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">bool</kbd> - <kbd>NSISIsProcessRunningByDirectory</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            根据目录路径，检查是否有文件已运行 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>directory</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>路径</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISIsProcessRunningByFileName “c:/”
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_1c383cd30b7c298ab50293adfecb7b18">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:38:33&nbsp;
+                            </div>
+                            <h4 class="textshadow">根据文件名，检查是否运行</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">003</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">bool</kbd> - <kbd>NSISIsProcessRunningByFileName</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            根据文件名称，检查文件是否已运行 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>fileName</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>文件名</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISIsProcessRunningByFileName “aceui.exe”
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_e369853df766fa44e1ed0ff613f563bd">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:47:18&nbsp;
+                            </div>
+                            <h4 class="textshadow">根据路径，检查是否运行</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">002</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">bool</kbd> - <kbd>NSISIsProcessRunningByFilePath</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            根据文件完整路径，检查文件是否已运行 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>filePath</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>文件路径</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISIsProcessRunningByFilePath “c:/aceui.exe”
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_182be0c5cdcd5072bb1864cdee4d3d6e">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:32:44&nbsp;
+                            </div>
+                            <h4 class="textshadow">判断系统是否X64</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">001</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">bool</kbd> - <kbd>NSISIsWow64</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            检查系统是否是64位 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISIsWow64
+Pop $0</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;"
+                        id="info_api_6364d3f0f495b6ab9dcf8d3b5c6e0b01">
+                        <div style="background:#f5f5f5;padding:20px;position:relative">
+                            <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                                最后修改者: admin &nbsp;2015-08-28 09:47:07&nbsp;
+                            </div>
+                            <h4 class="textshadow">删除目录</h4>
+                            <p>
+                                <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">000</span></b>
+                            </p>
+                            <div>
+                                <kbd style="color:green">void</kbd> - <kbd>NSISDeleteFolder</kbd>
+                            </div>
+                        </div>
+                        <div class="info">
+                            解决 NSIS 自带 RMDir /r 在子线程中删除含有大文件目录失败 </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">请求参数</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">参数名</th>
+                                        <th class="col-md-2">类型</th>
+                                        <th class="col-md-2">必传</th>
+                                        <th class="col-md-5">描述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>fileDir</td>
+                                        <td>string</td>
+                                        <td><span style="color:red">Y<span></td>
+                                        <td>目录路径</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background:#ffffff;padding:20px;">
+                            <h5 class="textshadow">使用举例</h5>
+                            <pre>nsUtils::NSISDeleteFolder &quot;$APPDATA/aceui&quot;</pre>
+                        </div>
+                    </div>
+                    <!--接口详细列表end-->
+                    <!--接口详情返回顶部按钮start-->
+                    <div id="gotop" onclick="goTop()"
+                        style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+                        T
+                    </div>
+                    <!--接口详情返回顶部按钮end-->
+                    <!--接口详情列表与接口管理end-->
+                </div>
+                <!--主窗口end-->
+            </div>
+        </div>
+    </div>
+    <script src="./res/jquery.min.js"></script>
+    <script src="./res/jquery.cookie.js"></script>
+    <script src="./res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
+    <link href="./res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./res/html5shiv.min.js"></script>
+    <script src="./res/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="height:100%">
+    <div class="container-fluid" style="background:white;height:100%;">
+        <div class="row" style="height:100%;">
+            <!--左侧导航start-->
+            <div id="navbar" class="col-md-3"
+                style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+                <div style="height:50px;font-size:30px;line-height:50px;">
+                    <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none"
+                        href="index.html">
+                        <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+                        <span style="position: relative;top:-3px;">AceUI API<span
+                                style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.0</span>
+                    </a>
+                    </span>
+                </div>
+                <!--导航-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="searchcate" onkeyup="search('cate',this)"
+                        placeholder="search here">
+                </div>
+                <div class="list">
+                    <ul class="list-unstyled">
+                        <form action="?act=cate" method="post">
+                            <li class="menu" id="info_7">
+                                <a href="nsStatistics.html">
+                                    nsStatistics </a>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;安装卸载统计<input type='hidden' name='aid' value='7'> <br>
+                                <hr>
+                            </li>
+                            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+                            <span class="keyword" id="7">安装卸载统计<|-|>nsStatistics</span>
+                            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        </form>
+                        <form action="?act=cate" method="post">
+                            <li class="menu" id="info_6">
+                                <a href="nsAutoUpdate.html">
+                                    nsAutoUpdate </a>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;自动增量升级系统客户端插件<input type='hidden' name='aid' value='6'> <br>
+                                <hr>
+                            </li>
+                            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+                            <span class="keyword" id="6">自动增量升级系统客户端插件<|-|>nsAutoUpdate</span>
+                            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        </form>
+                        <form action="?act=cate" method="post">
+                            <li class="menu" id="info_5">
+                                <a href="nsUtils.html">
+                                    nsUtils </a>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;NSIS 功能辅助插件<input type='hidden' name='aid' value='5'> <br>
+                                <hr>
+                            </li>
+                            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+                            <span class="keyword" id="5">NSIS 功能辅助插件<|-|>nsUtils</span>
+                            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        </form>
+                        <form action="?act=cate" method="post">
+                            <li class="menu" id="info_4">
+                                <a href="nsHttpRequest.html">
+                                    nsHttpRequest </a>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;NSIS Http/Https Post/Get 插件<input type='hidden' name='aid'
+                                    value='4'> <br>
+                                <hr>
+                            </li>
+                            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+                            <span class="keyword" id="4">NSIS Http/Https Post/Get 插件<|-|>nsHttpRequest</span>
+                            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        </form>
+                        <form action="?act=cate" method="post">
+                            <li class="menu" id="info_3">
+                                <a href="nsSkinEngine.html">
+                                    nsSkinEngine </a>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;NSIS 皮肤插件<input type='hidden' name='aid' value='3'> <br>
+                                <hr>
+                            </li>
+                            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+                            <span class="keyword" id="3">NSIS 皮肤插件<|-|>nsSkinEngine</span>
+                            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        </form>
+                    </ul>
+                </div>
+
+                <form action="?act=cate" method="post">
+                </form>
+                <!--jquery模糊查询start-->
+                <script>
+                    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+                    function search(type, obj) {
+                        var $find = $.trim($(obj).val());//得到搜索内容
+                        if (type == 'cate') {//对接口分类进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#info_" + menu_id).show();
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                            }
+                        } else if (type == 'api') {//对接口进行搜索操作
+                            if ($find != '') {
+                                $(".menu").hide();//左侧导航菜单隐藏
+                                $(".info_api").hide();
+                                //找到符合关键字的对象
+                                var $keywordobj = $(".keyword:contains('" + $find + "')")
+                                $keywordobj.each(function (i) {
+                                    var menu_id = $($keywordobj[i]).attr('id');
+                                    $("#api_" + menu_id).show();//左侧导航菜单 部份 隐藏
+                                    $("#info_api_" + menu_id).show();//接口详情 部份 隐藏
+                                });
+                            } else {
+                                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+                            }
+                        }
+                    }
+
+                    window.onload = function () {
+                        //添加关闭,打开左侧菜单的功能
+                        var status_flg = "&lt"; var cursor = "w-resize"
+                        var navbarButton = '<div onclick="navbar(this)" ' +
+                            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:' + cursor + ';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+                            status_flg +
+                            '</div>'
+                        //$('body').append(navbarButton);
+                    }
+                    // 全屏和normal
+                    function navbar(obj) {
+                        if ($('#mainwindow').hasClass('col-md-9')) {
+                            $(obj).html('&gt;');
+                            $(obj).css("cursor", "e-resize");
+                            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+                            $('#navbar').hide();
+                            $.cookie($COOKIE_KEY, '1');
+                        } else {
+                            $(obj).html('&lt;');
+                            $(obj).css("cursor", "w-resize");
+                            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+                            $('#navbar').show();
+                            $.cookie($COOKIE_KEY, '0');
+                        }
+                    }
+                </script>
+                <!--jquery模糊查询end-->
+                <!--end-->
+            </div>
+            <!--左侧导航end-->
+            <div id="mainwindow" class="col-md-9"
+                style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+                <!--顶部导航start-->
+                <div class="textshadow"
+                    style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                    <span> <a class="home" href="index.html">主页</a> - 欢迎</span>
+                </div>
+                <!--顶部导航end-->
+                <!--主窗口start-->
+                <div style="padding:16px;">
+                    <!--欢迎页-->
+                    <!--info start-->
+                    <div style="font-size:18px;">
+                        <div class="info" style="font-size:14px;">
+                            <span style="font-size:30px;" class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+                            <span style="font-size:16px;">欢迎使用AceUI API v1.0版</span><br>
+                            <pre class="info" style="margin:10px 34px 10px 34px">
+所有插件或接口怎么收费?
+&nbsp;&nbsp;&nbsp;&nbsp;请查看官方最新协议或添加QQ群咨询。
+为什么我使用插件后报错?
+&nbsp;&nbsp;&nbsp;&nbsp;插件分为为A和U版，请先确认自己的NSIS版本。建议使用例子中的一键打包环境。
+插件依赖其他DLL或者环境吗?
+&nbsp;&nbsp;&nbsp;&nbsp;插件纯win32 C++编写，互不依赖。
+        </pre>
+                            <span style="font-size:30px;" class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+                            <span style="font-size:16px;">文档工具下载</span><br>
+                            <pre class="info" style="margin:10px 34px 10px 34px">
+			插件下载地址： <a target="_blank" href="http://www.aceui.cn/">官网</a>
+		</pre>
+                        </div>
+                        <div style="font-size:12px;position:absolute;bottom:0;right:20px;height:20px;text-align:right;">
+                            Surou | qq : 652511569 | QQ 群 : <a target="_blank"
+                                href="http://shang.qq.com/wpa/qunwpa?idkey=0cd9eaabe2a7751b4981ce11bba148496c648fdfe7456f56835f0abd133bd53e">295808197</a>
+                        </div>
+                    </div>
+                    <!--欢迎页 end-->
+                </div>
+                <!--主窗口end-->
+            </div>
+        </div>
+    </div>
+    <script src="./res/jquery.min.js"></script>
+    <script src="./res/jquery.cookie.js"></script>
+    <script src="./res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
